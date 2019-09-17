@@ -85,7 +85,10 @@ Public Class ImportExcel
                         .Add(New SqlClient.SqlBulkCopyColumnMapping("UOM", "UOM"))
                         .Add(New SqlClient.SqlBulkCopyColumnMapping("Itemcode", "Itemcode"))
                         .Add(New SqlClient.SqlBulkCopyColumnMapping("Remark", "Remark"))
+                        .Add(New SqlClient.SqlBulkCopyColumnMapping("Lot", "Lot"))
+                        .Add(New SqlClient.SqlBulkCopyColumnMapping("ERP", "ERP"))
                         .Add(New SqlClient.SqlBulkCopyColumnMapping("DocumentType_Index", "DocumentType_Index"))
+                       
 
                     End With
 
