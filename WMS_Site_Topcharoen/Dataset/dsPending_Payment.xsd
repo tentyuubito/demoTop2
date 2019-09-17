@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPending_Payment" targetNamespace="http://tempuri.org/dsPending_Payment.xsd" xmlns:mstns="http://tempuri.org/dsPending_Payment.xsd" xmlns="http://tempuri.org/dsPending_Payment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Master_INH_CleanConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Master_INH_CleanConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Master_INH_CleanConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPending_Payment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPending_Payment" msprop:Generator_DataSetName="dsPending_Payment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_Pending_Payment" msprop:Generator_UserTableName="VIEW_RPT_Pending_Payment" msprop:Generator_RowDeletedName="VIEW_RPT_Pending_PaymentRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_Pending_PaymentRowChanged" msprop:Generator_RowClassName="VIEW_RPT_Pending_PaymentRow" msprop:Generator_RowChangingName="VIEW_RPT_Pending_PaymentRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_Pending_PaymentRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_Pending_PaymentRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_Pending_PaymentDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_Pending_Payment" msprop:Generator_RowDeletingName="VIEW_RPT_Pending_PaymentRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_Pending_Payment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_Id" msprop:Generator_UserColumnName="Customer_Id" msprop:Generator_ColumnVarNameInTable="columnCustomer_Id" msprop:Generator_ColumnPropNameInRow="Customer_Id" msprop:Generator_ColumnPropNameInTable="Customer_IdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Name" msprop:Generator_UserColumnName="Customer_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Name" msprop:Generator_ColumnPropNameInRow="Customer_Name" msprop:Generator_ColumnPropNameInTable="Customer_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_Amount" msprop:Generator_UserColumnName="Total_Amount" msprop:Generator_ColumnVarNameInTable="columnTotal_Amount" msprop:Generator_ColumnPropNameInRow="Total_Amount" msprop:Generator_ColumnPropNameInTable="Total_AmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ToTal_Payment_Amount" msprop:Generator_UserColumnName="ToTal_Payment_Amount" msprop:Generator_ColumnVarNameInTable="columnToTal_Payment_Amount" msprop:Generator_ColumnPropNameInRow="ToTal_Payment_Amount" msprop:Generator_ColumnPropNameInTable="ToTal_Payment_AmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Pending_Payment" msprop:Generator_UserColumnName="Pending_Payment" msprop:Generator_ColumnVarNameInTable="columnPending_Payment" msprop:Generator_ColumnPropNameInRow="Pending_Payment" msprop:Generator_ColumnPropNameInTable="Pending_PaymentColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tel" msprop:Generator_UserColumnName="tel" msprop:Generator_ColumnVarNameInTable="columntel" msprop:Generator_ColumnPropNameInRow="tel" msprop:Generator_ColumnPropNameInTable="telColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fax" msprop:Generator_UserColumnName="fax" msprop:Generator_ColumnVarNameInTable="columnfax" msprop:Generator_ColumnPropNameInRow="fax" msprop:Generator_ColumnPropNameInTable="faxColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsYearlyInOut" targetNamespace="http://tempuri.org/dsYearlyInOut.xsd" xmlns:mstns="http://tempuri.org/dsYearlyInOut.xsd" xmlns="http://tempuri.org/dsYearlyInOut.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Site_Pioneer_SukhumvitConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Site_Pioneer_SukhumvitConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Site_Pioneer_SukhumvitConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsYearlyInOut" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsYearlyInOut" msprop:Generator_DataSetName="dsYearlyInOut">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_YearlyInOut" msprop:Generator_UserTableName="VIEW_YearlyInOut" msprop:Generator_RowDeletedName="VIEW_YearlyInOutRowDeleted" msprop:Generator_RowChangedName="VIEW_YearlyInOutRowChanged" msprop:Generator_RowClassName="VIEW_YearlyInOutRow" msprop:Generator_RowChangingName="VIEW_YearlyInOutRowChanging" msprop:Generator_RowEvArgName="VIEW_YearlyInOutRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_YearlyInOutRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_YearlyInOutDataTable" msprop:Generator_TableVarName="tableVIEW_YearlyInOut" msprop:Generator_RowDeletingName="VIEW_YearlyInOutRowDeleting" msprop:Generator_TablePropName="VIEW_YearlyInOut">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_Index" msprop:Generator_UserColumnName="Customer_Index" msprop:Generator_ColumnVarNameInTable="columnCustomer_Index" msprop:Generator_ColumnPropNameInRow="Customer_Index" msprop:Generator_ColumnPropNameInTable="Customer_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sku_Index" msprop:Generator_UserColumnName="Sku_Index" msprop:Generator_ColumnVarNameInTable="columnSku_Index" msprop:Generator_ColumnPropNameInRow="Sku_Index" msprop:Generator_ColumnPropNameInTable="Sku_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SelectYear" msprop:Generator_UserColumnName="SelectYear" msprop:Generator_ColumnVarNameInTable="columnSelectYear" msprop:Generator_ColumnPropNameInRow="SelectYear" msprop:Generator_ColumnPropNameInTable="SelectYearColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SelectMonth" msprop:Generator_UserColumnName="SelectMonth" msprop:Generator_ColumnVarNameInTable="columnSelectMonth" msprop:Generator_ColumnPropNameInRow="SelectMonth" msprop:Generator_ColumnPropNameInTable="SelectMonthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Mon" msprop:Generator_UserColumnName="Mon" msprop:Generator_ColumnVarNameInTable="columnMon" msprop:Generator_ColumnPropNameInRow="Mon" msprop:Generator_ColumnPropNameInTable="MonColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sum_Qty_In" msprop:Generator_UserColumnName="sum_Qty_In" msprop:Generator_ColumnVarNameInTable="columnsum_Qty_In" msprop:Generator_ColumnPropNameInRow="sum_Qty_In" msprop:Generator_ColumnPropNameInTable="sum_Qty_InColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Weight_In" msprop:Generator_UserColumnName="sum_Weight_In" msprop:Generator_ColumnVarNameInTable="columnsum_Weight_In" msprop:Generator_ColumnPropNameInRow="sum_Weight_In" msprop:Generator_ColumnPropNameInTable="sum_Weight_InColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Volume_In" msprop:Generator_UserColumnName="sum_Volume_In" msprop:Generator_ColumnVarNameInTable="columnsum_Volume_In" msprop:Generator_ColumnPropNameInRow="sum_Volume_In" msprop:Generator_ColumnPropNameInTable="sum_Volume_InColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Qty_Out" msprop:Generator_UserColumnName="sum_Qty_Out" msprop:Generator_ColumnVarNameInTable="columnsum_Qty_Out" msprop:Generator_ColumnPropNameInRow="sum_Qty_Out" msprop:Generator_ColumnPropNameInTable="sum_Qty_OutColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Weight_Out" msprop:Generator_UserColumnName="sum_Weight_Out" msprop:Generator_ColumnVarNameInTable="columnsum_Weight_Out" msprop:Generator_ColumnPropNameInRow="sum_Weight_Out" msprop:Generator_ColumnPropNameInTable="sum_Weight_OutColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Volume_Out" msprop:Generator_UserColumnName="sum_Volume_Out" msprop:Generator_ColumnVarNameInTable="columnsum_Volume_Out" msprop:Generator_ColumnPropNameInRow="sum_Volume_Out" msprop:Generator_ColumnPropNameInTable="sum_Volume_OutColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Qty_Sku_Bal" msprop:Generator_UserColumnName="sum_Qty_Sku_Bal" msprop:Generator_ColumnVarNameInTable="columnsum_Qty_Sku_Bal" msprop:Generator_ColumnPropNameInRow="sum_Qty_Sku_Bal" msprop:Generator_ColumnPropNameInTable="sum_Qty_Sku_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Weight_Sku_Bal" msprop:Generator_UserColumnName="sum_Weight_Sku_Bal" msprop:Generator_ColumnVarNameInTable="columnsum_Weight_Sku_Bal" msprop:Generator_ColumnPropNameInRow="sum_Weight_Sku_Bal" msprop:Generator_ColumnPropNameInTable="sum_Weight_Sku_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sum_Volume_Sku_Bal" msprop:Generator_UserColumnName="sum_Volume_Sku_Bal" msprop:Generator_ColumnVarNameInTable="columnsum_Volume_Sku_Bal" msprop:Generator_ColumnPropNameInRow="sum_Volume_Sku_Bal" msprop:Generator_ColumnPropNameInTable="sum_Volume_Sku_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="temp_ID" msprop:Generator_UserColumnName="temp_ID" msprop:Generator_ColumnVarNameInTable="columntemp_ID" msprop:Generator_ColumnPropNameInRow="temp_ID" msprop:Generator_ColumnPropNameInTable="temp_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Temp_Description" msprop:Generator_UserColumnName="Temp_Description" msprop:Generator_ColumnVarNameInTable="columnTemp_Description" msprop:Generator_ColumnPropNameInRow="Temp_Description" msprop:Generator_ColumnPropNameInTable="Temp_DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tempID" msprop:Generator_UserColumnName="tempID" msprop:Generator_ColumnVarNameInTable="columntempID" msprop:Generator_ColumnPropNameInRow="tempID" msprop:Generator_ColumnPropNameInTable="tempIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

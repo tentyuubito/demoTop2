@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCheckStock" targetNamespace="http://tempuri.org/dsCheckStock.xsd" xmlns:mstns="http://tempuri.org/dsCheckStock.xsd" xmlns="http://tempuri.org/dsCheckStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Site_Sharp_V2_CusConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Site_Sharp_V2_CusConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_TIMCO.MySettings.GlobalReference.Default.WMS_Site_Sharp_V2_CusConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Site_SHARPConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Site_SHARPConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_TIMCO.MySettings.GlobalReference.Default.WMS_Site_SHARPConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCheckStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCheckStock" msprop:Generator_DataSetName="dsCheckStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_ACTION_For_ADJUST" msprop:Generator_UserTableName="VIEW_ACTION_For_ADJUST" msprop:Generator_RowDeletedName="VIEW_ACTION_For_ADJUSTRowDeleted" msprop:Generator_RowChangedName="VIEW_ACTION_For_ADJUSTRowChanged" msprop:Generator_RowClassName="VIEW_ACTION_For_ADJUSTRow" msprop:Generator_RowChangingName="VIEW_ACTION_For_ADJUSTRowChanging" msprop:Generator_RowEvArgName="VIEW_ACTION_For_ADJUSTRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_ACTION_For_ADJUSTRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_ACTION_For_ADJUSTDataTable" msprop:Generator_TableVarName="tableVIEW_ACTION_For_ADJUST" msprop:Generator_RowDeletingName="VIEW_ACTION_For_ADJUSTRowDeleting" msprop:Generator_TablePropName="VIEW_ACTION_For_ADJUST">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AdjustItemLocation_Index" msprop:Generator_UserColumnName="AdjustItemLocation_Index" msprop:Generator_ColumnPropNameInRow="AdjustItemLocation_Index" msprop:Generator_ColumnVarNameInTable="columnAdjustItemLocation_Index" msprop:Generator_ColumnPropNameInTable="AdjustItemLocation_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name_th" msprop:Generator_UserColumnName="Product_Name_th" msprop:Generator_ColumnPropNameInRow="Product_Name_th" msprop:Generator_ColumnVarNameInTable="columnProduct_Name_th" msprop:Generator_ColumnPropNameInTable="Product_Name_thColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty_1st_Count" msprop:Generator_UserColumnName="Qty_1st_Count" msprop:Generator_ColumnPropNameInRow="Qty_1st_Count" msprop:Generator_ColumnVarNameInTable="columnQty_1st_Count" msprop:Generator_ColumnPropNameInTable="Qty_1st_CountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty_Bal" msprop:Generator_UserColumnName="Qty_Bal" msprop:Generator_ColumnPropNameInRow="Qty_Bal" msprop:Generator_ColumnVarNameInTable="columnQty_Bal" msprop:Generator_ColumnPropNameInTable="Qty_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QTY_Diff" msdata:ReadOnly="true" msprop:Generator_UserColumnName="QTY_Diff" msprop:Generator_ColumnPropNameInRow="QTY_Diff" msprop:Generator_ColumnVarNameInTable="columnQTY_Diff" msprop:Generator_ColumnPropNameInTable="QTY_DiffColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Adjust_Qty" msprop:Generator_UserColumnName="Adjust_Qty" msprop:Generator_ColumnPropNameInRow="Adjust_Qty" msprop:Generator_ColumnVarNameInTable="columnAdjust_Qty" msprop:Generator_ColumnPropNameInTable="Adjust_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Location_Alias" msprop:Generator_UserColumnName="Location_Alias" msprop:Generator_ColumnPropNameInRow="Location_Alias" msprop:Generator_ColumnVarNameInTable="columnLocation_Alias" msprop:Generator_ColumnPropNameInTable="Location_AliasColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adjust_Index" msprop:Generator_UserColumnName="Adjust_Index" msprop:Generator_ColumnPropNameInRow="Adjust_Index" msprop:Generator_ColumnVarNameInTable="columnAdjust_Index" msprop:Generator_ColumnPropNameInTable="Adjust_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adjust_No" msprop:Generator_UserColumnName="Adjust_No" msprop:Generator_ColumnPropNameInRow="Adjust_No" msprop:Generator_ColumnVarNameInTable="columnAdjust_No" msprop:Generator_ColumnPropNameInTable="Adjust_NoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adjust_Date" msprop:Generator_UserColumnName="Adjust_Date" msprop:Generator_ColumnVarNameInTable="columnAdjust_Date" msprop:Generator_ColumnPropNameInRow="Adjust_Date" msprop:Generator_ColumnPropNameInTable="Adjust_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EanCode" msprop:Generator_UserColumnName="EanCode" msprop:Generator_ColumnVarNameInTable="columnEanCode" msprop:Generator_ColumnPropNameInRow="EanCode" msprop:Generator_ColumnPropNameInTable="EanCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DocumentType" msprop:Generator_UserColumnName="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="test" msprop:Generator_UserColumnName="test" msprop:Generator_ColumnVarNameInTable="columntest" msprop:Generator_ColumnPropNameInRow="test" msprop:Generator_ColumnPropNameInTable="testColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Comment" msprop:Generator_UserColumnName="Comment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInTable="CommentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Mfg_Date" msdata:Caption="Adjust_Date" msprop:Generator_UserColumnName="Mfg_Date" msprop:Generator_ColumnPropNameInRow="Mfg_Date" msprop:Generator_ColumnVarNameInTable="columnMfg_Date" msprop:Generator_ColumnPropNameInTable="Mfg_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Exp_Date" msprop:Generator_UserColumnName="Exp_Date" msprop:Generator_ColumnPropNameInRow="Exp_Date" msprop:Generator_ColumnVarNameInTable="columnExp_Date" msprop:Generator_ColumnPropNameInTable="Exp_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tag_No" msprop:Generator_UserColumnName="Tag_No" msprop:Generator_ColumnPropNameInRow="Tag_No" msprop:Generator_ColumnVarNameInTable="columnTag_No" msprop:Generator_ColumnPropNameInTable="Tag_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Plot" msprop:Generator_UserColumnName="Plot" msprop:Generator_ColumnPropNameInRow="Plot" msprop:Generator_ColumnVarNameInTable="columnPlot" msprop:Generator_ColumnPropNameInTable="PlotColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VIEW_ACTION_For_ADJUST" />
+      <xs:field xpath="mstns:AdjustItemLocation_Index" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMaxOrder" targetNamespace="http://tempuri.org/dsMaxOrder.xsd" xmlns:mstns="http://tempuri.org/dsMaxOrder.xsd" xmlns="http://tempuri.org/dsMaxOrder.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Master_INHConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Master_INHConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Master_INHConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMaxOrder" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsMaxOrder" msprop:Generator_DataSetName="dsMaxOrder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_ProductOverStock" msprop:Generator_UserTableName="VIEW_RPT_ProductOverStock" msprop:Generator_RowDeletedName="VIEW_RPT_ProductOverStockRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_ProductOverStockRowChanged" msprop:Generator_RowClassName="VIEW_RPT_ProductOverStockRow" msprop:Generator_RowChangingName="VIEW_RPT_ProductOverStockRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_ProductOverStockRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_ProductOverStockRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_ProductOverStockDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_ProductOverStock" msprop:Generator_RowDeletingName="VIEW_RPT_ProductOverStockRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_ProductOverStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sku_Index" msprop:Generator_UserColumnName="Sku_Index" msprop:Generator_ColumnVarNameInTable="columnSku_Index" msprop:Generator_ColumnPropNameInRow="Sku_Index" msprop:Generator_ColumnPropNameInTable="Sku_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name_th" msprop:Generator_UserColumnName="Product_Name_th" msprop:Generator_ColumnVarNameInTable="columnProduct_Name_th" msprop:Generator_ColumnPropNameInRow="Product_Name_th" msprop:Generator_ColumnPropNameInTable="Product_Name_thColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="package" msprop:Generator_UserColumnName="package" msprop:Generator_ColumnVarNameInTable="columnpackage" msprop:Generator_ColumnPropNameInRow="package" msprop:Generator_ColumnPropNameInTable="packageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Max_Qty" msprop:Generator_UserColumnName="Max_Qty" msprop:Generator_ColumnVarNameInTable="columnMax_Qty" msprop:Generator_ColumnPropNameInRow="Max_Qty" msprop:Generator_ColumnPropNameInTable="Max_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Min_Qty" msprop:Generator_UserColumnName="Min_Qty" msprop:Generator_ColumnVarNameInTable="columnMin_Qty" msprop:Generator_ColumnPropNameInRow="Min_Qty" msprop:Generator_ColumnPropNameInTable="Min_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sum_Qty_Bal" msprop:Generator_UserColumnName="Sum_Qty_Bal" msprop:Generator_ColumnVarNameInTable="columnSum_Qty_Bal" msprop:Generator_ColumnPropNameInRow="Sum_Qty_Bal" msprop:Generator_ColumnPropNameInTable="Sum_Qty_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty_AboveMax" msprop:Generator_UserColumnName="Qty_AboveMax" msprop:Generator_ColumnVarNameInTable="columnQty_AboveMax" msprop:Generator_ColumnPropNameInRow="Qty_AboveMax" msprop:Generator_ColumnPropNameInTable="Qty_AboveMaxColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PercentQty_AboveMax" msprop:Generator_UserColumnName="PercentQty_AboveMax" msprop:Generator_ColumnVarNameInTable="columnPercentQty_AboveMax" msprop:Generator_ColumnPropNameInRow="PercentQty_AboveMax" msprop:Generator_ColumnPropNameInTable="PercentQty_AboveMaxColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ProductType_Index" msprop:Generator_UserColumnName="ProductType_Index" msprop:Generator_ColumnVarNameInTable="columnProductType_Index" msprop:Generator_ColumnPropNameInRow="ProductType_Index" msprop:Generator_ColumnPropNameInTable="ProductType_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Index" msprop:Generator_UserColumnName="Customer_Index" msprop:Generator_ColumnVarNameInTable="columnCustomer_Index" msprop:Generator_ColumnPropNameInRow="Customer_Index" msprop:Generator_ColumnPropNameInTable="Customer_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationBalance_Index" msprop:Generator_UserColumnName="LocationBalance_Index" msprop:Generator_ColumnVarNameInTable="columnLocationBalance_Index" msprop:Generator_ColumnPropNameInRow="LocationBalance_Index" msprop:Generator_ColumnPropNameInTable="LocationBalance_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

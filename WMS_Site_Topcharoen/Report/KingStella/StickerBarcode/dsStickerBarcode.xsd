@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStickerBarcode" targetNamespace="http://tempuri.org/dsStickerBarcode.xsd" xmlns:mstns="http://tempuri.org/dsStickerBarcode.xsd" xmlns="http://tempuri.org/dsStickerBarcode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStickerBarcode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsStickerBarcode" msprop:Generator_DataSetName="dsStickerBarcode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_StickerBarcode" msprop:Generator_UserTableName="View_StickerBarcode" msprop:Generator_RowDeletedName="View_StickerBarcodeRowDeleted" msprop:Generator_TableClassName="View_StickerBarcodeDataTable" msprop:Generator_RowChangedName="View_StickerBarcodeRowChanged" msprop:Generator_RowClassName="View_StickerBarcodeRow" msprop:Generator_RowChangingName="View_StickerBarcodeRowChanging" msprop:Generator_RowEvArgName="View_StickerBarcodeRowChangeEvent" msprop:Generator_RowEvHandlerName="View_StickerBarcodeRowChangeEventHandler" msprop:Generator_TablePropName="View_StickerBarcode" msprop:Generator_TableVarName="tableView_StickerBarcode" msprop:Generator_RowDeletingName="View_StickerBarcodeRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sticker_No1" msprop:Generator_UserColumnName="Sticker_No1" msprop:Generator_ColumnPropNameInRow="Sticker_No1" msprop:Generator_ColumnVarNameInTable="columnSticker_No1" msprop:Generator_ColumnPropNameInTable="Sticker_No1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Sticker_Barcode1" msprop:Generator_UserColumnName="Sticker_Barcode1" msprop:Generator_ColumnPropNameInRow="Sticker_Barcode1" msprop:Generator_ColumnVarNameInTable="columnSticker_Barcode1" msprop:Generator_ColumnPropNameInTable="Sticker_Barcode1Column" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Sticker_No2" msprop:Generator_UserColumnName="Sticker_No2" msprop:Generator_ColumnPropNameInRow="Sticker_No2" msprop:Generator_ColumnVarNameInTable="columnSticker_No2" msprop:Generator_ColumnPropNameInTable="Sticker_No2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Sticker_Barcode2" msprop:Generator_UserColumnName="Sticker_Barcode2" msprop:Generator_ColumnPropNameInRow="Sticker_Barcode2" msprop:Generator_ColumnVarNameInTable="columnSticker_Barcode2" msprop:Generator_ColumnPropNameInTable="Sticker_Barcode2Column" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

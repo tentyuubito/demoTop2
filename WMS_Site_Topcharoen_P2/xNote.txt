@@ -1,0 +1,6 @@
+ServiceControl
+- http://192.168.1.8/ServiceStd4_2/Service.asmx
+- http://kascoit.ddns.net:99/ServiceStd4_2/Service.asmx
+
+WebReference
+-http://210.1.6.66/ServiceWMS/WebServiceWMS.asmx

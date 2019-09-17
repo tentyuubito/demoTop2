@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStockPriceSummary" targetNamespace="http://tempuri.org/dsStockPriceSummary.xsd" xmlns:mstns="http://tempuri.org/dsStockPriceSummary.xsd" xmlns="http://tempuri.org/dsStockPriceSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStockPriceSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsStockPriceSummary" msprop:Generator_DataSetName="dsStockPriceSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockPriceSummary" msprop:Generator_UserTableName="StockPriceSummary" msprop:Generator_RowDeletedName="StockPriceSummaryRowDeleted" msprop:Generator_RowChangedName="StockPriceSummaryRowChanged" msprop:Generator_RowClassName="StockPriceSummaryRow" msprop:Generator_RowChangingName="StockPriceSummaryRowChanging" msprop:Generator_RowEvArgName="StockPriceSummaryRowChangeEvent" msprop:Generator_RowEvHandlerName="StockPriceSummaryRowChangeEventHandler" msprop:Generator_TableClassName="StockPriceSummaryDataTable" msprop:Generator_TableVarName="tableStockPriceSummary" msprop:Generator_RowDeletingName="StockPriceSummaryRowDeleting" msprop:Generator_TablePropName="StockPriceSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sku_id" msprop:Generator_UserColumnName="sku_id" msprop:Generator_ColumnPropNameInRow="sku_id" msprop:Generator_ColumnVarNameInTable="columnsku_id" msprop:Generator_ColumnPropNameInTable="sku_idColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Product_Name_th" msprop:Generator_UserColumnName="Product_Name_th" msprop:Generator_ColumnPropNameInRow="Product_Name_th" msprop:Generator_ColumnVarNameInTable="columnProduct_Name_th" msprop:Generator_ColumnPropNameInTable="Product_Name_thColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Product_Name_en" msprop:Generator_UserColumnName="Product_Name_en" msprop:Generator_ColumnPropNameInRow="Product_Name_en" msprop:Generator_ColumnVarNameInTable="columnProduct_Name_en" msprop:Generator_ColumnPropNameInTable="Product_Name_enColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Package_Id" msprop:Generator_UserColumnName="Package_Id" msprop:Generator_ColumnPropNameInRow="Package_Id" msprop:Generator_ColumnVarNameInTable="columnPackage_Id" msprop:Generator_ColumnPropNameInTable="Package_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Package_sku" msprop:Generator_UserColumnName="Package_sku" msprop:Generator_ColumnPropNameInRow="Package_sku" msprop:Generator_ColumnVarNameInTable="columnPackage_sku" msprop:Generator_ColumnPropNameInTable="Package_skuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Plot" msprop:Generator_UserColumnName="Plot" msprop:Generator_ColumnPropNameInRow="Plot" msprop:Generator_ColumnVarNameInTable="columnPlot" msprop:Generator_ColumnPropNameInTable="PlotColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty_Bal" msprop:Generator_UserColumnName="Qty_Bal" msprop:Generator_ColumnPropNameInRow="Qty_Bal" msprop:Generator_ColumnVarNameInTable="columnQty_Bal" msprop:Generator_ColumnPropNameInTable="Qty_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Weight_Bal" msprop:Generator_UserColumnName="Weight_Bal" msprop:Generator_ColumnPropNameInRow="Weight_Bal" msprop:Generator_ColumnVarNameInTable="columnWeight_Bal" msprop:Generator_ColumnPropNameInTable="Weight_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Volume_Bal" msprop:Generator_UserColumnName="Volume_Bal" msprop:Generator_ColumnPropNameInRow="Volume_Bal" msprop:Generator_ColumnVarNameInTable="columnVolume_Bal" msprop:Generator_ColumnPropNameInTable="Volume_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ItemStatus_Des" msprop:Generator_UserColumnName="ItemStatus_Des" msprop:Generator_ColumnPropNameInRow="ItemStatus_Des" msprop:Generator_ColumnVarNameInTable="columnItemStatus_Des" msprop:Generator_ColumnPropNameInTable="ItemStatus_DesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemStatus_Index" msprop:Generator_UserColumnName="ItemStatus_Index" msprop:Generator_ColumnPropNameInRow="ItemStatus_Index" msprop:Generator_ColumnVarNameInTable="columnItemStatus_Index" msprop:Generator_ColumnPropNameInTable="ItemStatus_IndexColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SumPrice" msprop:Generator_UserColumnName="SumPrice" msprop:Generator_ColumnPropNameInRow="SumPrice" msprop:Generator_ColumnVarNameInTable="columnSumPrice" msprop:Generator_ColumnPropNameInTable="SumPriceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="ProductType_Index" msprop:Generator_UserColumnName="ProductType_Index" msprop:Generator_ColumnPropNameInRow="ProductType_Index" msprop:Generator_ColumnVarNameInTable="columnProductType_Index" msprop:Generator_ColumnPropNameInTable="ProductType_IndexColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Price1" msprop:Generator_UserColumnName="Price1" msprop:Generator_ColumnPropNameInRow="Price1" msprop:Generator_ColumnVarNameInTable="columnPrice1" msprop:Generator_ColumnPropNameInTable="Price1Column" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

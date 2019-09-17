@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSummary_Consolidate_Shipment" targetNamespace="http://tempuri.org/dsSummary_Consolidate_Shipment.xsd" xmlns:mstns="http://tempuri.org/dsSummary_Consolidate_Shipment.xsd" xmlns="http://tempuri.org/dsSummary_Consolidate_Shipment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSummary_Consolidate_Shipment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSummary_Consolidate_Shipment" msprop:Generator_DataSetName="dsSummary_Consolidate_Shipment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_Summary_Consolidate_Shipment" msprop:Generator_UserTableName="VIEW_RPT_Summary_Consolidate_Shipment" msprop:Generator_RowDeletedName="VIEW_RPT_Summary_Consolidate_ShipmentRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_Summary_Consolidate_ShipmentRowChanged" msprop:Generator_RowClassName="VIEW_RPT_Summary_Consolidate_ShipmentRow" msprop:Generator_RowChangingName="VIEW_RPT_Summary_Consolidate_ShipmentRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_Summary_Consolidate_ShipmentRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_Summary_Consolidate_ShipmentRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_Summary_Consolidate_ShipmentDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_Summary_Consolidate_Shipment" msprop:Generator_RowDeletingName="VIEW_RPT_Summary_Consolidate_ShipmentRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_Summary_Consolidate_Shipment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Shipment_No" msprop:Generator_UserColumnName="Shipment_No" msprop:Generator_ColumnPropNameInRow="Shipment_No" msprop:Generator_ColumnVarNameInTable="columnShipment_No" msprop:Generator_ColumnPropNameInTable="Shipment_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Route_Desc" msprop:Generator_UserColumnName="Route_Desc" msprop:Generator_ColumnPropNameInRow="Route_Desc" msprop:Generator_ColumnVarNameInTable="columnRoute_Desc" msprop:Generator_ColumnPropNameInTable="Route_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Customer_Shipping_Desc" msprop:Generator_UserColumnName="Customer_Shipping_Desc" msprop:Generator_ColumnPropNameInRow="Customer_Shipping_Desc" msprop:Generator_ColumnVarNameInTable="columnCustomer_Shipping_Desc" msprop:Generator_ColumnPropNameInTable="Customer_Shipping_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SO" msprop:Generator_UserColumnName="SO" msprop:Generator_ColumnPropNameInRow="SO" msprop:Generator_ColumnVarNameInTable="columnSO" msprop:Generator_ColumnPropNameInTable="SOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EAN" msprop:Generator_UserColumnName="EAN" msprop:Generator_ColumnPropNameInRow="EAN" msprop:Generator_ColumnVarNameInTable="columnEAN" msprop:Generator_ColumnPropNameInTable="EANColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Desc" msprop:Generator_UserColumnName="Sku_Desc" msprop:Generator_ColumnPropNameInRow="Sku_Desc" msprop:Generator_ColumnVarNameInTable="columnSku_Desc" msprop:Generator_ColumnPropNameInTable="Sku_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Order_Qty" msprop:Generator_UserColumnName="Order_Qty" msprop:Generator_ColumnPropNameInRow="Order_Qty" msprop:Generator_ColumnVarNameInTable="columnOrder_Qty" msprop:Generator_ColumnPropNameInTable="Order_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Open_Qty" msprop:Generator_UserColumnName="Open_Qty" msprop:Generator_ColumnPropNameInRow="Open_Qty" msprop:Generator_ColumnVarNameInTable="columnOpen_Qty" msprop:Generator_ColumnPropNameInTable="Open_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Package_Desc" msprop:Generator_UserColumnName="Package_Desc" msprop:Generator_ColumnPropNameInRow="Package_Desc" msprop:Generator_ColumnVarNameInTable="columnPackage_Desc" msprop:Generator_ColumnPropNameInTable="Package_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" msprop:Generator_UserColumnName="Notes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInTable="NotesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_UserColumnName="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="add_by" msprop:Generator_UserColumnName="add_by" msprop:Generator_ColumnPropNameInRow="add_by" msprop:Generator_ColumnVarNameInTable="columnadd_by" msprop:Generator_ColumnPropNameInTable="add_byColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Driver_name" msprop:Generator_UserColumnName="Driver_name" msprop:Generator_ColumnPropNameInRow="Driver_name" msprop:Generator_ColumnVarNameInTable="columnDriver_name" msprop:Generator_ColumnPropNameInTable="Driver_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Driver_lastname" msprop:Generator_UserColumnName="Driver_lastname" msprop:Generator_ColumnPropNameInRow="Driver_lastname" msprop:Generator_ColumnVarNameInTable="columnDriver_lastname" msprop:Generator_ColumnPropNameInTable="Driver_lastnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipToName" msprop:Generator_UserColumnName="ShipToName" msprop:Generator_ColumnPropNameInRow="ShipToName" msprop:Generator_ColumnVarNameInTable="columnShipToName" msprop:Generator_ColumnPropNameInTable="ShipToNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NumberSO" msprop:Generator_UserColumnName="NumberSO" msprop:Generator_ColumnPropNameInRow="NumberSO" msprop:Generator_ColumnVarNameInTable="columnNumberSO" msprop:Generator_ColumnPropNameInTable="NumberSOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Customer_Shipping_Id" msprop:Generator_UserColumnName="Customer_Shipping_Id" msprop:Generator_ColumnVarNameInTable="columnCustomer_Shipping_Id" msprop:Generator_ColumnPropNameInRow="Customer_Shipping_Id" msprop:Generator_ColumnPropNameInTable="Customer_Shipping_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty_Bal" msprop:Generator_UserColumnName="Qty_Bal" msprop:Generator_ColumnPropNameInRow="Qty_Bal" msprop:Generator_ColumnVarNameInTable="columnQty_Bal" msprop:Generator_ColumnPropNameInTable="Qty_BalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PackageSku_Desc" msprop:Generator_UserColumnName="PackageSku_Desc" msprop:Generator_ColumnVarNameInTable="columnPackageSku_Desc" msprop:Generator_ColumnPropNameInRow="PackageSku_Desc" msprop:Generator_ColumnPropNameInTable="PackageSku_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Weight_G" msprop:Generator_UserColumnName="Weight_G" msprop:Generator_ColumnPropNameInRow="Weight_G" msprop:Generator_ColumnVarNameInTable="columnWeight_G" msprop:Generator_ColumnPropNameInTable="Weight_GColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TransportRegion_Desc" msprop:Generator_UserColumnName="TransportRegion_Desc" msprop:Generator_ColumnVarNameInTable="columnTransportRegion_Desc" msprop:Generator_ColumnPropNameInRow="TransportRegion_Desc" msprop:Generator_ColumnPropNameInTable="TransportRegion_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SubRoute_Desc" msprop:Generator_UserColumnName="SubRoute_Desc" msprop:Generator_ColumnVarNameInTable="columnSubRoute_Desc" msprop:Generator_ColumnPropNameInRow="SubRoute_Desc" msprop:Generator_ColumnPropNameInTable="SubRoute_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DistributionCenter_Desc" msprop:Generator_UserColumnName="DistributionCenter_Desc" msprop:Generator_ColumnVarNameInTable="columnDistributionCenter_Desc" msprop:Generator_ColumnPropNameInRow="DistributionCenter_Desc" msprop:Generator_ColumnPropNameInTable="DistributionCenter_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Shipment_Date" msprop:Generator_UserColumnName="Shipment_Date" msprop:Generator_ColumnPropNameInRow="Shipment_Date" msprop:Generator_ColumnVarNameInTable="columnShipment_Date" msprop:Generator_ColumnPropNameInTable="Shipment_DateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

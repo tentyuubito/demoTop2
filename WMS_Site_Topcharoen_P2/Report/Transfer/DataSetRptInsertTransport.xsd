@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetRptInsertTransport" targetNamespace="http://tempuri.org/DataSetRptInsertTransport.xsd" xmlns:mstns="http://tempuri.org/DataSetRptInsertTransport.xsd" xmlns="http://tempuri.org/DataSetRptInsertTransport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetRptInsertTransport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetRptInsertTransport" msprop:Generator_DataSetName="DataSetRptInsertTransport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_rptInsertTransport" msprop:Generator_UserTableName="View_rptInsertTransport" msprop:Generator_RowDeletedName="View_rptInsertTransportRowDeleted" msprop:Generator_TableClassName="View_rptInsertTransportDataTable" msprop:Generator_RowChangedName="View_rptInsertTransportRowChanged" msprop:Generator_RowClassName="View_rptInsertTransportRow" msprop:Generator_RowChangingName="View_rptInsertTransportRowChanging" msprop:Generator_RowEvArgName="View_rptInsertTransportRowChangeEvent" msprop:Generator_RowEvHandlerName="View_rptInsertTransportRowChangeEventHandler" msprop:Generator_TablePropName="View_rptInsertTransport" msprop:Generator_TableVarName="tableView_rptInsertTransport" msprop:Generator_RowDeletingName="View_rptInsertTransportRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Str1" msprop:Generator_UserColumnName="Str1" msprop:Generator_ColumnPropNameInRow="Str1" msprop:Generator_ColumnVarNameInTable="columnStr1" msprop:Generator_ColumnPropNameInTable="Str1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str2" msprop:Generator_UserColumnName="Str2" msprop:Generator_ColumnPropNameInRow="Str2" msprop:Generator_ColumnVarNameInTable="columnStr2" msprop:Generator_ColumnPropNameInTable="Str2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str3" msprop:Generator_UserColumnName="Str3" msprop:Generator_ColumnPropNameInRow="Str3" msprop:Generator_ColumnVarNameInTable="columnStr3" msprop:Generator_ColumnPropNameInTable="Str3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str4" msprop:Generator_UserColumnName="Str4" msprop:Generator_ColumnPropNameInRow="Str4" msprop:Generator_ColumnVarNameInTable="columnStr4" msprop:Generator_ColumnPropNameInTable="Str4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Doc_No" msprop:Generator_UserColumnName="Doc_No" msprop:Generator_ColumnPropNameInRow="Doc_No" msprop:Generator_ColumnVarNameInTable="columnDoc_No" msprop:Generator_ColumnPropNameInTable="Doc_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Column1" msprop:Generator_UserColumnName="Column1" msprop:Generator_ColumnPropNameInRow="Column1" msprop:Generator_ColumnVarNameInTable="columnColumn1" msprop:Generator_ColumnPropNameInTable="Column1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="No" msprop:Generator_UserColumnName="No" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInTable="NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SKU" msprop:Generator_UserColumnName="SKU" msprop:Generator_ColumnPropNameInRow="SKU" msprop:Generator_ColumnVarNameInTable="columnSKU" msprop:Generator_ColumnPropNameInTable="SKUColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BARCODE" msprop:Generator_UserColumnName="BARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BRAND" msprop:Generator_UserColumnName="BRAND" msprop:Generator_ColumnPropNameInRow="BRAND" msprop:Generator_ColumnVarNameInTable="columnBRAND" msprop:Generator_ColumnPropNameInTable="BRANDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Model" msprop:Generator_UserColumnName="Model" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInTable="ModelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_UserColumnName="QTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PACKAGEUNIT" msprop:Generator_UserColumnName="PACKAGEUNIT" msprop:Generator_ColumnPropNameInRow="PACKAGEUNIT" msprop:Generator_ColumnVarNameInTable="columnPACKAGEUNIT" msprop:Generator_ColumnPropNameInTable="PACKAGEUNITColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWithdraw_Consolidate_Picking" targetNamespace="http://tempuri.org/dsWithdraw_Consolidate_Picking.xsd" xmlns:mstns="http://tempuri.org/dsWithdraw_Consolidate_Picking.xsd" xmlns="http://tempuri.org/dsWithdraw_Consolidate_Picking.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWithdraw_Consolidate_Picking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWithdraw_Consolidate_Picking" msprop:Generator_DataSetName="dsWithdraw_Consolidate_Picking">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtWithdraw_Consolidate_Picking" msprop:Generator_UserTableName="dtWithdraw_Consolidate_Picking" msprop:Generator_RowDeletedName="dtWithdraw_Consolidate_PickingRowDeleted" msprop:Generator_RowChangedName="dtWithdraw_Consolidate_PickingRowChanged" msprop:Generator_RowClassName="dtWithdraw_Consolidate_PickingRow" msprop:Generator_RowChangingName="dtWithdraw_Consolidate_PickingRowChanging" msprop:Generator_RowEvArgName="dtWithdraw_Consolidate_PickingRowChangeEvent" msprop:Generator_RowEvHandlerName="dtWithdraw_Consolidate_PickingRowChangeEventHandler" msprop:Generator_TableClassName="dtWithdraw_Consolidate_PickingDataTable" msprop:Generator_TableVarName="tabledtWithdraw_Consolidate_Picking" msprop:Generator_RowDeletingName="dtWithdraw_Consolidate_PickingRowDeleting" msprop:Generator_TablePropName="dtWithdraw_Consolidate_Picking">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Picking_No" msprop:Generator_UserColumnName="Picking_No" msprop:Generator_ColumnPropNameInRow="Picking_No" msprop:Generator_ColumnVarNameInTable="columnPicking_No" msprop:Generator_ColumnPropNameInTable="Picking_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picking_Date" msprop:Generator_UserColumnName="Picking_Date" msprop:Generator_ColumnPropNameInRow="Picking_Date" msprop:Generator_ColumnVarNameInTable="columnPicking_Date" msprop:Generator_ColumnPropNameInTable="Picking_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Picking_Create_by" msprop:Generator_UserColumnName="Picking_Create_by" msprop:Generator_ColumnPropNameInRow="Picking_Create_by" msprop:Generator_ColumnVarNameInTable="columnPicking_Create_by" msprop:Generator_ColumnPropNameInTable="Picking_Create_byColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picking_Create_Date" msprop:Generator_UserColumnName="Picking_Create_Date" msprop:Generator_ColumnPropNameInRow="Picking_Create_Date" msprop:Generator_ColumnVarNameInTable="columnPicking_Create_Date" msprop:Generator_ColumnPropNameInTable="Picking_Create_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DN_No" msprop:Generator_UserColumnName="DN_No" msprop:Generator_ColumnPropNameInRow="DN_No" msprop:Generator_ColumnVarNameInTable="columnDN_No" msprop:Generator_ColumnPropNameInTable="DN_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DN_Date" msprop:Generator_UserColumnName="DN_Date" msprop:Generator_ColumnPropNameInRow="DN_Date" msprop:Generator_ColumnVarNameInTable="columnDN_Date" msprop:Generator_ColumnPropNameInTable="DN_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DN_Seq" msprop:Generator_UserColumnName="DN_Seq" msprop:Generator_ColumnPropNameInRow="DN_Seq" msprop:Generator_ColumnVarNameInTable="columnDN_Seq" msprop:Generator_ColumnPropNameInTable="DN_SeqColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DN_Remark" msprop:Generator_UserColumnName="DN_Remark" msprop:Generator_ColumnPropNameInRow="DN_Remark" msprop:Generator_ColumnVarNameInTable="columnDN_Remark" msprop:Generator_ColumnPropNameInTable="DN_RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DN_Qty" msdata:Caption="Open_Qty" msprop:Generator_UserColumnName="DN_Qty" msprop:Generator_ColumnPropNameInRow="DN_Qty" msprop:Generator_ColumnVarNameInTable="columnDN_Qty" msprop:Generator_ColumnPropNameInTable="DN_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sold_To_Id" msprop:Generator_UserColumnName="Sold_To_Id" msprop:Generator_ColumnPropNameInRow="Sold_To_Id" msprop:Generator_ColumnVarNameInTable="columnSold_To_Id" msprop:Generator_ColumnPropNameInTable="Sold_To_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sold_To_Name" msprop:Generator_UserColumnName="Sold_To_Name" msprop:Generator_ColumnPropNameInRow="Sold_To_Name" msprop:Generator_ColumnVarNameInTable="columnSold_To_Name" msprop:Generator_ColumnPropNameInTable="Sold_To_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sold_To_Address" msprop:Generator_UserColumnName="Sold_To_Address" msprop:Generator_ColumnPropNameInRow="Sold_To_Address" msprop:Generator_ColumnVarNameInTable="columnSold_To_Address" msprop:Generator_ColumnPropNameInTable="Sold_To_AddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sold_To_Contract" msprop:Generator_UserColumnName="Sold_To_Contract" msprop:Generator_ColumnPropNameInRow="Sold_To_Contract" msprop:Generator_ColumnVarNameInTable="columnSold_To_Contract" msprop:Generator_ColumnPropNameInTable="Sold_To_ContractColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ship_To_Id" msprop:Generator_UserColumnName="Ship_To_Id" msprop:Generator_ColumnPropNameInRow="Ship_To_Id" msprop:Generator_ColumnVarNameInTable="columnShip_To_Id" msprop:Generator_ColumnPropNameInTable="Ship_To_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ship_To_Name" msprop:Generator_UserColumnName="Ship_To_Name" msprop:Generator_ColumnPropNameInRow="Ship_To_Name" msprop:Generator_ColumnVarNameInTable="columnShip_To_Name" msprop:Generator_ColumnPropNameInTable="Ship_To_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ship_To_Address" msprop:Generator_UserColumnName="Ship_To_Address" msprop:Generator_ColumnPropNameInRow="Ship_to_Address" msprop:Generator_ColumnVarNameInTable="columnShip_to_Address" msprop:Generator_ColumnPropNameInTable="Ship_to_AddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ship_To_Contract" msprop:Generator_UserColumnName="Ship_To_Contract" msprop:Generator_ColumnPropNameInRow="Ship_To_Contract" msprop:Generator_ColumnVarNameInTable="columnShip_To_Contract" msprop:Generator_ColumnPropNameInTable="Ship_To_ContractColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Name" msprop:Generator_UserColumnName="Sku_Name" msprop:Generator_ColumnPropNameInRow="Sku_Name" msprop:Generator_ColumnVarNameInTable="columnSku_Name" msprop:Generator_ColumnPropNameInTable="Sku_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Unit" msprop:Generator_UserColumnName="Sku_Unit" msprop:Generator_ColumnPropNameInRow="Sku_Unit" msprop:Generator_ColumnVarNameInTable="columnSku_Unit" msprop:Generator_ColumnPropNameInTable="Sku_UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sku_Barcode" msprop:Generator_UserColumnName="Sku_Barcode" msprop:Generator_ColumnPropNameInRow="Sku_Barcode" msprop:Generator_ColumnVarNameInTable="columnSku_Barcode" msprop:Generator_ColumnPropNameInTable="Sku_BarcodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Bin" msprop:Generator_UserColumnName="Bin" msprop:Generator_ColumnPropNameInRow="Bin" msprop:Generator_ColumnVarNameInTable="columnBin" msprop:Generator_ColumnPropNameInTable="BinColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

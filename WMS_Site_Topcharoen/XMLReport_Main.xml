@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report_Configuration>
+   <!--"1. รายงานการสั่งซื้อสินค้า "-->
+  <Report>
+    <Description_Thai>รายงานสรุปการสั่งซื้อ</Description_Thai>
+    <Description_Eng>Report Purchase Order Summary</Description_Eng>
+
+    <Sub_Report name="RPTPURCHASEORDERSUMMAY">
+      <Description_Thai>รายงานสรุปการสั่งซื้อ</Description_Thai>
+      <Description_Eng>รายงานสรุปการสั่งซื้อ</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTPOPENDINGRECEIVE">
+      <Description_Thai>รายงานสรุปสินค้าค้างรับ</Description_Thai>
+      <Description_Eng>รายงานสรุปสินค้าค้างรับ</Description_Eng>
+    </Sub_Report>
+    <!--<Sub_Report name="RPTPOPENDINGRECEIVE2">
+      <Description_Thai>รายงานสรุปสินค้าค้างรับ2</Description_Thai>
+      <Description_Eng>รายงานสรุปสินค้าค้างรับ2</Description_Eng>
+    </Sub_Report>-->
+  </Report>
+  <!--"2. รายงานการสั่งขายสินค้า"-->
+  <Report>
+    <Description_Thai>รายงานการสั่งขายสินค้า</Description_Thai>
+    <Description_Eng>Report Sales Order Summary</Description_Eng>
+
+    <Sub_Report name="RPTSALEORDERSUMMAY">
+      <Description_Thai>รายงานสรุปการสั่งขาย</Description_Thai>
+      <Description_Eng>รายงานสรุปการสั่งขาย</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTSALEORDERBYMANIFESTSUMMAY">
+      <Description_Thai>รายงานสรุปการสั่งขายตามใบคุมรถ</Description_Thai>
+      <Description_Eng>รายงานสรุปการสั่งขายตามใบคุมรถ</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTSOPENDINGWITHDRAW">
+      <Description_Thai>รายสรุปใบสั่งขายค้างจ่าย</Description_Thai>
+      <Description_Eng>รายสรุปใบสั่งขายค้างจ่าย</Description_Eng>
+    </Sub_Report>
+  </Report>
+  <!--"3. รายงานการจองสินค้า"-->
+  <!--<Report>
+    <Description_Thai>รายงานการจองสินค้า</Description_Thai>
+    <Description_Eng>Report Reserve Order Summary</Description_Eng>
+
+    <Sub_Report name="RPTRESERVATIONSUMMAY">
+      <Description_Thai>รายงานสรุปการจอง</Description_Thai> 
+      <Description_Eng>รายงานสรุปการจอง</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTRESERVATIONPENDING">
+      <Description_Thai>รายสรุปใบจองค้างจ่าย</Description_Thai>
+      <Description_Eng>รายสรุปใบจองค้างจ่าย</Description_Eng>
+    </Sub_Report>
+  </Report>-->
+  <!--"4. รายงานสินค้าขาเข้า"-->
+  <Report>
+    <Description_Thai>รายงานสินค้าขาเข้า</Description_Thai>
+    <Description_Eng>Report INBOUND</Description_Eng>
+    <Sub_Report name="RPTORDERSUMMARY">
+      <Description_Thai>รายงานสรุปการรับสินค้า(TH จัดกลุ่มตามเจ้าของสินค้า)</Description_Thai>
+      <Description_Eng>รายงานสรุปการรับสินค้า(TH จัดกลุ่มตามเจ้าของสินค้า)</Description_Eng>
+    </Sub_Report>
+	  <!--<Sub_Report name="RPTORDERSUMMARY_ENG">
+		  <Description_Thai>รายงานสรุปการรับสินค้า(ENG)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการรับสินค้า(ENG)</Description_Eng>
+	  </Sub_Report>-->
+    <Sub_Report name="RPTRECGROUPBYPRODUCT">
+      <Description_Thai>รายงานสรุปการรับสินค้า (จัดกลุ่มตามสินค้า)</Description_Thai>
+      <Description_Eng>รายงานสรุปการรับสินค้า (จัดกลุ่มตามสินค้า)</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTORDERWITHPO">
+      <Description_Thai>รายงานสรุปการรับสินค้า (จัดกลุ่มตามผู้ขาย) </Description_Thai>
+      <Description_Eng>รายงานสรุปการรับสินค้า (จัดกลุ่มตามผู้ขาย)</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTDEPOSITCUSTOMER">
+      <Description_Thai>รายงานสรุปการจัดเก็บสินค้า</Description_Thai>
+      <Description_Eng>รายงานสรุปการจัดเก็บสินค้า</Description_Eng>
+    </Sub_Report>
+    <!--<Sub_Report name="RPTRECGROUPBYSKU">
+      <Description_Thai>รายงานสรุปการรับสินค้า แยกตาม SKU</Description_Thai>
+      <Description_Eng>รายงานสรุปการรับสินค้า แยกตาม SKU</Description_Eng>
+    </Sub_Report>
+	  <Sub_Report name="RPTRECGROUPBYSKU_ENG">
+		  <Description_Thai>รายงานสรุปการรับสินค้า แยกตาม SKU(ENG)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการรับสินค้า แยกตาม SKU(ENG)</Description_Eng>
+	  </Sub_Report>-->
+  </Report>
+  <!--"5. รายงานสินค้าขาออก"-->
+  <Report>
+    <Description_Thai>รายงานสินค้าขาออก</Description_Thai>
+	  <Description_Eng>Report OutBound</Description_Eng>
+	  <Sub_Report name="RPTWITHDRAWLOCATION">
+		  <Description_Thai>รายงานสรุปการหยิบสินค้า (จัดกลุ่มตามเจ้าของสินค้า)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการหยิบสินค้า (จัดกลุ่มตามเจ้าของสินค้า)</Description_Eng>
+	  </Sub_Report>
+	 <!--<Sub_Report name="RPTWITHDRAWSUMMARY">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามลูกค้า)(TH)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามลูกค้า)(TH)</Description_Eng>
+	  </Sub_Report>-->
+	  <!--<Sub_Report name="RPTWITHDRAWSUMMARY_ENG">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามลูกค้า)(Eng)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามลูกค้า)(Eng)</Description_Eng>
+	  </Sub_Report>-->
+	  <Sub_Report name="RPTWITHDRAWGROUPBYPRODUCT">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามสินค้า) </Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า (จัดกลุ่มตามสินค้า)</Description_Eng>
+	  </Sub_Report>
+	  <Sub_Report name="RPTWITHDRAWGROUPBYSKU">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า แยกตาม SKU</Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า แยกตาม SKU</Description_Eng>
+	  </Sub_Report>
+	  <!--<Sub_Report name="RPTWITHDRAWGROUPBYSKU_ENG1">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า แยกตาม SKU(ENG)</Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า แยกตาม SKU(ENG)</Description_Eng>
+	  </Sub_Report>-->
+	  <!--<Sub_Report name="RPTWITHDRAWWITHINVOICE">
+		  <Description_Thai>รายงานสรุปการเบิกสินค้า - แสดงใบสั่งขาย/Invoice</Description_Thai>
+		  <Description_Eng>รายงานสรุปการเบิกสินค้า - แสดงใบสั่งขาย/Invoice</Description_Eng>
+	  </Sub_Report>-->
+  </Report>
+  <!--"6. รายงานคลังสินค้าและการใช้พื้นที่"-->
+  <Report>
+    <Description_Thai>รายงานคลังสินค้าและการใช้พื้นที่</Description_Thai>
+		<Description_Eng>Report WareHouse and Location</Description_Eng>
+		<!--<Sub_Report name="RPTMOVEMENTSUMMARY">
+			<Description_Thai>รายงานสรุปการย้ายตำแหน่ง</Description_Thai>
+			<Description_Eng>รายงานสรุปการย้ายตำแหน่ง</Description_Eng>
+		</Sub_Report>-->
+	<Sub_Report name="RPTTRANSFERSUMMARY">
+				<Description_Thai>รายงานสรุปการโอนสถานะสินค้า</Description_Thai>
+				<Description_Eng>รายงานสรุปการโอนสถานะสินค้า</Description_Eng>
+	</Sub_Report>
+	<!--<Sub_Report name="RPTTRANSFERCODESUMMARY">
+				<Description_Thai>รายงานสรุปการโอนรหัสสินค้า</Description_Thai>
+				<Description_Eng>รายงานสรุปการโอนรหัสสินค้า</Description_Eng>
+			</Sub_Report>-->
+	<Sub_Report name="RPTADJUSTSUMMARY">
+			<Description_Thai>รายงานสรุปการตรวจนับ</Description_Thai>
+			<Description_Eng>รายงานสรุปการตรวจนับ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTADJUSTCONFIRMSUMMARY">
+			<Description_Thai>รายงานสรุปการปรับปรุงยอดสินค้า</Description_Thai>
+			<Description_Eng>รายงานสรุปการปรับปรุงยอดสินค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTLOCATION">
+			<Description_Thai>รายงานสรุปการใช้พื้นที่ตามคลัง</Description_Thai>
+			<Description_Eng>รายงานสรุปการใช้พื้นที่ตามคลัง</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTLOCATION_ZONE">
+			<Description_Thai>รายงานสรุปการใช้พื้นที่ตาม Zone</Description_Thai>
+			<Description_Eng>รายงานสรุปการใช้พื้นที่ตาม Zone</Description_Eng>
+		</Sub_Report>
+	</Report>
+  <!--"7. รายงานบริหารสินค้าคงคลัง"-->
+  <Report>
+    <!--รอตรวจสอบ report ไม่สมบูรณ์-->
+		<Description_Thai>รายงานบริหารสินค้าคงคลัง </Description_Thai>      
+		<Description_Eng>Report Inventory Menagement</Description_Eng>
+		<Sub_Report name="RPTSTOCKONHAND">
+			<Description_Thai>รายงานสรุปสินค้าคงคลังแยกตาม Lot และสถานะ</Description_Thai>
+			<Description_Eng>รายงานสรุปสินค้าคงคลังแยกตาม Lot และสถานะ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTINOUTDAILYBALANCE">
+			<Description_Thai>รายงานสรุปสินค้าคงเหลือรายวัน</Description_Thai>
+			<Description_Eng>รายงานสรุปสินค้าคงเหลือรายวัน</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTMINORDER">
+			<Description_Thai>รายงานสินค้าต่ำกว่าค่ากำหนดต่ำสุด (Safety Stock)</Description_Thai>
+			<Description_Eng>รายงานสินค้าต่ำกว่าค่ากำหนดต่ำสุด (Safety Stock)</Description_Eng>
+		</Sub_Report>
+    <!--<Sub_Report name="RPTMINORDER_ENG">
+      <Description_Thai>รายงานสินค้าต่ำกว่าค่ากำหนดต่ำสุด (Safety Stock) (ENG)</Description_Thai>
+      <Description_Eng>รายงานสินค้าต่ำกว่าค่ากำหนดต่ำสุด (Safety Stock) (ENG)</Description_Eng>
+    </Sub_Report>-->
+		<Sub_Report name="RPTMAXORDER">
+			<Description_Thai>รายงานสินค้าสูงกว่าค่ากำหนดสูงสุด (Overstock)</Description_Thai>
+			<Description_Eng>รายงานสินค้าสูงกว่าค่ากำหนดสูงสุด (Overstock)</Description_Eng>
+		</Sub_Report>
+    <!--<Sub_Report name="RPTMAXORDER_Eng">
+      <Description_Thai>รายงานสินค้าสูงกว่าค่ากำหนดสูงสุด (Overstock) (ENG)</Description_Thai>
+      <Description_Eng>รายงานสินค้าสูงกว่าค่ากำหนดสูงสุด (Overstock)  (ENG)</Description_Eng>
+    </Sub_Report>-->
+    <!--<Sub_Report name="">
+      <Description_Thai>รายงานสินค้าคงค้างจากการยืม</Description_Thai>
+      <Description_Eng>รายงานสินค้าคงค้างจากการยืม</Description_Eng>
+    </Sub_Report>-->
+    <Sub_Report name="RPTTRANSACTIONSHOWWEIGHT">
+			<Description_Thai>รายงานการเคลื่อนไหวของสินค้า (แสดงตามน้ำหนัก)</Description_Thai>
+			<Description_Eng>รายงานการเคลื่อนไหวของสินค้า (แสดงตามน้ำหนัก)</Description_Eng>
+		</Sub_Report>
+    <Sub_Report name="RPTTRANSACTIONSHOWVOLUME">
+      <Description_Thai>รายงานการเคลื่อนไหวของสินค้า (แสดงตามปริมาตร)</Description_Thai>
+      <Description_Eng>รายงานการเคลื่อนไหวของสินค้า (แสดงตามปริมาตร)</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTTRANSACTIONSHOWWEIGHT_ENG">
+      <Description_Thai>รายงานการเคลื่อนไหวของสินค้า (แสดงตามน้ำหนัก)(ENG)</Description_Thai>
+      <Description_Eng>รายงานการเคลื่อนไหวของสินค้า (แสดงตามน้ำหนัก)(ENG)</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTTRANSACTIONSHOWVOLUME_ENG">
+      <Description_Thai>รายงานการเคลื่อนไหวของสินค้า (แสดงตามปริมาตร)(ENG)</Description_Thai>
+      <Description_Eng>รายงานการเคลื่อนไหวของสินค้า (แสดงตามปริมาตร)(ENG)</Description_Eng>
+    </Sub_Report>
+			<Sub_Report name="RPTSTOCKPRICESUMMARY">
+			<Description_Thai>รายงานสรุปมูลค่าสินค้าคงคลัง</Description_Thai>
+			<Description_Eng>รายงานสรุปมูลค่าสินค้าคงคลัง</Description_Eng>
+		</Sub_Report>
+		<!--<Sub_Report name="RPTEXPIREDPRICESUMMARY">
+			<Description_Thai>รายงานสรุปมูลค่าสินค้าใกล้หมดอายุ</Description_Thai>
+			<Description_Eng>รายงานสรุปมูลค่าสินค้าใกล้หมดอายุ</Description_Eng>
+		</Sub_Report>-->
+		<!--<Sub_Report name="">
+			<Description_Thai>รายงานสรุปมูลค่า 3</Description_Thai>
+			<Description_Eng>รายงานสรุปมูลค่า 3</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานสรุปมูลค่า 4</Description_Thai>
+			<Description_Eng>รายงานสรุปมูลค่า 4</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานสรุปมูลค่า 5</Description_Thai>
+			<Description_Eng>รายงานสรุปมูลค่า 5</Description_Eng>
+		</Sub_Report>-->
+		<!--<Sub_Report name="RPTABCANALYSIS">
+			<Description_Thai>รายงานวิเคราะห์กลุ่มสินค้า ABC </Description_Thai>
+			<Description_Eng>รายงานวิเคราะห์กลุ่มสินค้า ABC </Description_Eng>
+		</Sub_Report>-->
+		<!--<Sub_Report name="">
+			<Description_Thai>รายงาน InventoryQty_ItemStatus</Description_Thai>
+			<Description_Eng>รายงาน InventoryQty_ItemStatus</Description_Eng>
+		</Sub_Report>-->
+	</Report>
+  <!--"8. รายงานสินค้าคงคลังรายชิ้น"-->
+
+  <!--"9. รายงานวิเคาราพห์อายุสินค้า"-->
+  <Report>
+    <Description_Thai>รายงานวิเคราะห์อายุสินค้า</Description_Thai>
+	<Description_Eng>Report Analysis of a product</Description_Eng>
+	<Sub_Report name="RPTSTOCKAGINGANALYSIS">
+		<Description_Thai>รายงานวิเคราะห์อายุสินค้าคงคลัง (TH)</Description_Thai>
+		<Description_Eng>รายงานวิเคราะห์อายุสินค้าคงคลัง(TH)</Description_Eng>
+	</Sub_Report>
+	<!--<Sub_Report name="RPTSTOCKAGINGANALYSIS_ENG">
+		<Description_Thai>รายงานวิเคราะห์อายุสินค้าคงคลัง (Eng)</Description_Thai>
+		<Description_Eng>รายงานวิเคราะห์อายุสินค้าคงคลัง (Eng)</Description_Eng>
+	</Sub_Report>-->
+	<Sub_Report name="RPTDEADSTOCKSUMMARY">
+		<Description_Thai>รายงานสินค้าที่ไม่มีการเคลื่อนไหว (TH)</Description_Thai>
+		<Description_Eng>รายงานสินค้าที่ไม่มีการเคลื่อนไหว (TH)</Description_Eng>
+	</Sub_Report>
+	<!--<Sub_Report name="RPTDEADSTOCKSUMMARY_ENG">
+		<Description_Thai>รายงานสินค้าที่ไม่มีการเคลื่อนไหว (ENG)</Description_Thai>
+		<Description_Eng>รายงานสินค้าที่ไม่มีการเคลื่อนไหว (ENG)</Description_Eng>
+	</Sub_Report>-->
+	<Sub_Report name="RPTEXPIREDPRODUCTSUMMARY">
+		<Description_Thai>รายงานสินค้าใกล้หมดอายุ</Description_Thai>
+		<Description_Eng>รายงานสินค้าใกล้หมดอายุ</Description_Eng>
+	</Sub_Report>
+	</Report>
+
+	<!--"10. รายงานเชิงสถิติ / กราฟ"-->
+	<!--<Report>
+		<Description_Thai>รายงานเชิงสถิติ / กราฟ</Description_Thai>
+		<Description_Eng>Statistical reports / graphs</Description_Eng>
+		<Sub_Report name="RPTGRAPHS">
+			<Description_Thai>กราฟแท่งสรุปสินค้าเข้า-ออก</Description_Thai>
+			<Description_Eng>กราฟแท่งสรุปสินค้าเข้า-ออก</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTPIE_SPACEUSEDBYCUSTOMER">
+			<Description_Thai>กราฟวงกลมแสดงสัดส่วนการใช้พื้นที่ตามลูกค้า</Description_Thai>
+			<Description_Eng>กราฟวงกลมแสดงสัดส่วนการใช้พื้นที่ตามลูกค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTPIE_SPACEUSEDBYPRODUCTTYPE">
+		<Description_Thai>กราฟวงกลมแสดงสัดส่วนการใช้พื้นที่ตามประเภทสินค้า</Description_Thai>
+		<Description_Eng>กราฟวงกลมแสดงสัดส่วนการใช้พื้นที่ตามประเภทสินค้า</Description_Eng>	
+	</Sub_Report>
+		<Sub_Report name="RPTBAR_SPACEUSEDBYWH">
+			<Description_Thai>กราฟแท่งแสดงสัดส่วนการใช้พื้นที่แยกตามคลัง</Description_Thai>
+			<Description_Eng>กราฟแท่งแสดงสัดส่วนการใช้พื้นที่แยกตามคลัง</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+	<!--"11. รายงานทะเบียน / ข้อมูลพื้นฐาน "-->
+	<!--<Report>
+		<Description_Thai>รายงานทะเบียน / ข้อมูลพื้นฐาน</Description_Thai>
+		<Description_Eng>รายงานทะเบียน / ข้อมูลพื้นฐาน</Description_Eng>
+		<Sub_Report name="">
+			<Description_Thai>รายงานทะเบียน / ข้อมูลพื้นฐาน</Description_Thai>
+			<Description_Eng>รายงานทะเบียน / ข้อมูลพื้นฐาน</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+	   <Report>
+	<Description_Thai>รายการเข้าใช้งานระบบ</Description_Thai>
+	<Description_Eng>รายการเข้าใช้งานระบบ</Description_Eng>
+	<Sub_Report name="RPTAUDIT_LOG_TH">
+		<Description_Thai>รายการเข้าใช้งานระบบ</Description_Thai>
+		<Description_Eng>รายการเข้าใช้งานระบบ</Description_Eng>
+	</Sub_Report>
+</Report>
+
+	<!--"13. รายงานสรุปค่าบริการ(ทั่วไป)  "-->
+	<!--<Report>
+		<Description_Thai>รายงานสรุปค่าบริการ(ทั่วไป)</Description_Thai>
+		<Description_Eng>รายงานสรุปค่าบริการ(ทั่วไป)</Description_Eng>
+		<Sub_Report name="">
+			<Description_Thai>รายงานค่าฝากสินค้า</Description_Thai>
+			<Description_Eng>รายงานค่าฝากสินค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานค่าโหลดสินค้่า</Description_Thai>
+			<Description_Eng>รายงานค่าโหลดสินค้่า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานสรุปค่าบริการ</Description_Thai>
+			<Description_Eng>รายงานสรุปค่าบริการ</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+
+
+	<!--"14. รายงานกิจกรรมเสริม  "-->
+	<Report>
+		<Description_Thai>รายงานกิจกรรมเสริม</Description_Thai>
+		<Description_Eng>รายงานกิจกรรมเสริม</Description_Eng>
+		<Sub_Report name="RPTPACKING_SUMMARY">
+			<Description_Thai>รายงานการประกอบสินค้า</Description_Thai>
+			<Description_Eng>รายงานการประกอบสินค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTBOM_SUMMARY">
+			<Description_Thai>รายงานสูตรการประกอบ</Description_Thai>
+			<Description_Eng>รายงานสูตรการประกอบ</Description_Eng>
+		</Sub_Report>
+	</Report>
+
+	<!--"15. รายงานคลังเขตปลอดอากรสนามบิน"-->
+	<!--<Report>
+		<Description_Thai>รายงานคลังเขตปลอดอากรสนามบิน</Description_Thai>
+		<Description_Eng>รายงานคลังเขตปลอดอากรสนามบิน</Description_Eng>
+		<Sub_Report name="">
+			<Description_Thai>รายงานกานเคลื่อนย้ายสินค้าเข้า</Description_Thai>
+			<Description_Eng>รายงานกานเคลื่อนย้ายสินค้าเข้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTWITHDRAW_PIONEER">
+			<Description_Thai>รายงานการเคลื่อนย้ายสินค้าออก</Description_Thai>
+			<Description_Eng>รายงานการเคลื่อนย้ายสินค้าออก</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานการเคลื่อนย้ายสินค้าคงเหลือ</Description_Thai>
+			<Description_Eng>รายงานการเคลื่อนย้ายสินค้าคงเหลือ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานคลังเขตปลอดอากรสนามบิน 4</Description_Thai>
+			<Description_Eng>รายงานคลังเขตปลอดอากรสนามบิน 4</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานคลังเขตปลอดอากรสนามบิน 5</Description_Thai>
+			<Description_Eng>รายงานคลังเขตปลอดอากรสนามบิน 5</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+
+	<!--"16. รายงานคลังเขตปลอดอากรทั่วไป"-->
+	<!--<Report>
+		<Description_Thai>รายงานคลังเขตปลอดอากรทั่วไป</Description_Thai>
+		<Description_Eng>รายงานคลังเขตปลอดอากรทั่วไป</Description_Eng>
+		<Sub_Report name="RPTSTOCKONHAND_FREEZONE">
+			<Description_Thai>รายงานรายการสินค้าคงเหลือ</Description_Thai>
+			<Description_Eng>รายงานรายการสินค้าคงเหลือ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานการเคลื่อนย้ายสินค้า เข้า</Description_Thai>
+			<Description_Eng>รายงานการเคลื่อนย้ายสินค้า เข้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานการเคลื่อนย้ายสินค้า ออก</Description_Thai>
+			<Description_Eng>รายงานการเคลื่อนย้ายสินค้า ออก</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานคลังเขตปลอดอากรทั่วไป 4</Description_Thai>
+			<Description_Eng>รายงานคลังเขตปลอดอากรทั่วไป 4</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานคลังเขตปลอดอากรทั่วไป 5</Description_Thai>
+			<Description_Eng>รายงานคลังเขตปลอดอากรทั่วไป 5</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+
+	<!--"17. รายงานคลังสินค้าทัณฑ์บน"-->
+	<!--<Report>
+		<Description_Thai>รายงานคลังสินค้าทัณฑ์บน</Description_Thai>
+		<Description_Eng>รายงานคลังสินค้าทัณฑ์บน</Description_Eng>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของนำเข้าคลังสินค้าทัณฑ์บนฯ</Description_Thai>
+			<Description_Eng>รายงานบัญชีของนำเข้าคลังสินค้าทัณฑ์บนฯ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของโอนย้ายนำเข้า</Description_Thai>
+			<Description_Eng>รายงานบัญชีของโอนย้ายนำเข้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของขอชำระภาษี</Description_Thai>
+			<Description_Eng>รายงานบัญชีของขอชำระภาษี</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของยกเว้นอากร</Description_Thai>
+			<Description_Eng>รายงานบัญชีของยกเว้นอากร</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของส่งออกนอกราชอาณาจักร</Description_Thai>
+			<Description_Eng>รายงานบัญชีของส่งออกนอกราชอาณาจักร</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีของโอนย้ายนำออก</Description_Thai>
+			<Description_Eng>รายงานบัญชีของโอนย้ายนำออก</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีมูลค่าและอากรคงเหลือ</Description_Thai>
+			<Description_Eng>รายงานบัญชีมูลค่าและอากรคงเหลือ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="">
+			<Description_Thai>รายงานบัญชีแยกประเภท</Description_Thai>
+			<Description_Eng>รายงานบัญชีแยกประเภท</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+	<!--"18. รายงานพิเศษลูกค้า  รายงานสำหรับผู้บริหาร"-->
+	<!--<Report>
+		<Description_Thai>รายงานสำหรับผู้บริหาร</Description_Thai>
+		<Description_Eng>รายงานสำหรับผู้บริหาร</Description_Eng>
+		
+		<Sub_Report name="RPTINVENTORY_AGING">
+			<Description_Thai>กราฟวงกลมเปรียบเทียบสินค้าคงคลังตามช่วงอายุ</Description_Thai>
+			<Description_Eng>กราฟวงกลมเปรียบเทียบสินค้าคงคลังตามช่วงอายุ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTINVENTORY_STOCKONHAND_AGING">
+			<Description_Thai>กราฟแท่งสรุปยอดสินค้าคงคลังตามช่วงอายุ</Description_Thai>
+			<Description_Eng>กราฟแท่งสรุปยอดสินค้าคงคลังตามช่วงอายุ</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTINVENTORYBYPRODUCTGROUP">
+			<Description_Thai>เปรียบเทียบสินค้าคงคลังตามกลุ่มสินค้า (ชิ้น)</Description_Thai>
+			<Description_Eng>เปรียบเทียบสินค้าคงคลังตามกลุ่มสินค้า (ชิ้น)</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTINVENTORYBYGRADE">
+			<Description_Thai>กราฟเปรียบเทียบสินค้าคงคลังตามเกรดสินค้า (ชิ้น)</Description_Thai>
+			<Description_Eng>กราฟเปรียบเทียบสินค้าคงคลังตามเกรดสินค้า (ชิ้น)</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTSPACEUTILIZATIONBYPRODUCTGROUP">
+			<Description_Thai>กราฟการใช้งานพื้นที่ตามกลุ่มสินค้า</Description_Thai>
+			<Description_Eng>กราฟการใช้งานพื้นที่ตามกลุ่มสินค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTSPACEUTILIZATIONBYPRODUCTGRADE">
+			<Description_Thai>กราฟการใช้งานพื้นที่ตามเกรดสินค้า</Description_Thai>
+			<Description_Eng>กราฟการใช้งานพื้นที่ตามเกรดสินค้า</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTAVERAGEAGINGREPORTBYPRODUCTGROUP">
+			<Description_Thai>กราฟแสดงอายุเฉลี่ยสินค้าคงคลังตามประเภท</Description_Thai>
+			<Description_Eng>กราฟแสดงอายุเฉลี่ยสินค้าคงคลังตามประเภท</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTSPACEUTILIZATION_BY_LOCATIONRACK_TH">
+			<Description_Thai>รายงานกราฟการใช้พื้นตามแถวชั้นจัดเก็บ </Description_Thai>
+			<Description_Eng>รายงานกราฟการใช้พื้นตามแถวชั้นจัดเก็บ </Description_Eng>
+		</Sub_Report>
+    <Sub_Report name="RPTSPACEUTILIZATION_BY_LOCATIONRACK_ENG">
+      <Description_Thai>รายงานกราฟการใช้พื้นตามแถวชั้นจัดเก็บ Eng </Description_Thai>
+      <Description_Eng>รายงานกราฟการใช้พื้นตามแถวชั้นจัดเก็บ Eng</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name="RPTCOMPAREPUTAWAY">
+			<Description_Thai>กราฟเปรียบเทียบการแนะนำตำแหน่งจัดเก็บตามผู้ใช้งาน</Description_Thai>
+			<Description_Eng>กราฟเปรียบเทียบการแนะนำตำแหน่งจัดเก็บตามผู้ใช้งาน</Description_Eng>
+		</Sub_Report>
+		<Sub_Report name="RPTPICKINGPERFORMANCE">
+			<Description_Thai>กราฟเปรียบเทียบการกระจายงานในการหยิบสินค้า</Description_Thai>
+			<Description_Eng>กราฟเปรียบเทียบการกระจายงานในการหยิบสินค้า</Description_Eng>
+		</Sub_Report>
+	</Report>-->
+	<!--"19. Management Report "-->
+	<Report>
+		<Description_Thai>Management Report </Description_Thai>
+		<Description_Eng>Management Report </Description_Eng>
+		<Sub_Report name="ManagementReport">
+			<Description_Thai>Management Report </Description_Thai>
+			<Description_Eng>Management Report </Description_Eng>
+		</Sub_Report>
+	</Report>
+  
+  <!--20. HoveDK Report-->
+  <!--<Report>
+    <Description_Thai>รายงาน HoveDK </Description_Thai>
+    <Description_Eng> HoveDK Report</Description_Eng>
+    <Sub_Report name ="RPT_MONTHLY_REPORT_STORE_BYPRODUCTTYPE">
+      <Description_Thai>รายงานรับ-จ่ายวัตถุดิบ(ตามประเภทสินค้า)</Description_Thai>
+      <Description_Eng>Monthly Report Store by ProductType</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name ="RPT_MONTHLY_REPORT_STORE_BYSKU">
+      <Description_Thai>รายงานรับ-จ่ายวัตถุดิบ(ตามสินค้า)</Description_Thai>
+      <Description_Eng>Monthly Report Store by SKU</Description_Eng>
+    </Sub_Report>
+    <Sub_Report name ="RPT_WEEKLY_REPORT_STORE_BYDEP">
+      <Description_Thai>รายงานการสั่งซื้อ-การเบิกจ่ายวัตถุดิบ(แยกแผนก)</Description_Thai>
+      <Description_Eng>Weekly Report Store by Department</Description_Eng>
+    </Sub_Report>
+    
+    <Sub_Report name ="RPT_MONTHLY_REPORT_STORE_BYWAREHOUSE">
+      <Description_Thai>รายงานรับ-จ่ายวัตถุดิบ(ตามคลัง)</Description_Thai>
+      <Description_Eng>Monthly Report Store by WareHouse</Description_Eng>
+    </Sub_Report>
+
+  </Report>-->
+  
+  
+	</Report_Configuration>
+
+
+

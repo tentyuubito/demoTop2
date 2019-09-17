@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOM_Summary" targetNamespace="http://tempuri.org/dsBOM_Summary.xsd" xmlns:mstns="http://tempuri.org/dsBOM_Summary.xsd" xmlns="http://tempuri.org/dsBOM_Summary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Master_INH_CleanConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Master_INH_CleanConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Master_INH_CleanConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOM_Summary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOM_Summary" msprop:Generator_DataSetName="dsBOM_Summary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_BOM_Summary" msprop:Generator_UserTableName="VIEW_RPT_BOM_Summary" msprop:Generator_RowDeletedName="VIEW_RPT_BOM_SummaryRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_BOM_SummaryRowChanged" msprop:Generator_RowClassName="VIEW_RPT_BOM_SummaryRow" msprop:Generator_RowChangingName="VIEW_RPT_BOM_SummaryRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_BOM_SummaryRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_BOM_SummaryRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_BOM_SummaryDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_BOM_Summary" msprop:Generator_RowDeletingName="VIEW_RPT_BOM_SummaryRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_BOM_Summary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sku_Id_Bom" msprop:Generator_UserColumnName="Sku_Id_Bom" msprop:Generator_ColumnVarNameInTable="columnSku_Id_Bom" msprop:Generator_ColumnPropNameInRow="Sku_Id_Bom" msprop:Generator_ColumnPropNameInTable="Sku_Id_BomColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="skuDes_Bom" msprop:Generator_UserColumnName="skuDes_Bom" msprop:Generator_ColumnVarNameInTable="columnskuDes_Bom" msprop:Generator_ColumnPropNameInRow="skuDes_Bom" msprop:Generator_ColumnPropNameInTable="skuDes_BomColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Str1" msprop:Generator_UserColumnName="Str1" msprop:Generator_ColumnVarNameInTable="columnStr1" msprop:Generator_ColumnPropNameInRow="Str1" msprop:Generator_ColumnPropNameInTable="Str1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PackingBom_Index" msprop:Generator_UserColumnName="PackingBom_Index" msprop:Generator_ColumnVarNameInTable="columnPackingBom_Index" msprop:Generator_ColumnPropNameInRow="PackingBom_Index" msprop:Generator_ColumnPropNameInTable="PackingBom_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pack_Sku" msprop:Generator_UserColumnName="Pack_Sku" msprop:Generator_ColumnVarNameInTable="columnPack_Sku" msprop:Generator_ColumnPropNameInRow="Pack_Sku" msprop:Generator_ColumnPropNameInTable="Pack_SkuColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Index" msprop:Generator_UserColumnName="Customer_Index" msprop:Generator_ColumnVarNameInTable="columnCustomer_Index" msprop:Generator_ColumnPropNameInRow="Customer_Index" msprop:Generator_ColumnPropNameInTable="Customer_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductType_Index" msprop:Generator_UserColumnName="ProductType_Index" msprop:Generator_ColumnVarNameInTable="columnProductType_Index" msprop:Generator_ColumnPropNameInRow="ProductType_Index" msprop:Generator_ColumnPropNameInTable="ProductType_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VIEW_RPT_BOM_Summary" />
+      <xs:field xpath="mstns:PackingBom_Index" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

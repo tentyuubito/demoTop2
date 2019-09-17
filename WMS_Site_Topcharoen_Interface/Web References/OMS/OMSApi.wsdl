@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBranchList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetBranchListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchListResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnValue">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data">
+            <s:complexType>
+              <s:sequence>
+                <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+          <s:element minOccurs="0" maxOccurs="1" name="Params" type="tns:ArrayOfParamStruct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfParamStruct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ParamStruct" type="tns:ParamStruct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ParamStruct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProductListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductListResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDropPointList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDropPointListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDropPointListResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sao_type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderListResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResponseOrderList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sao_code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="istat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TransferNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemCode2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ref_JobNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResponseOrderListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResponseOrderListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_Transfer_Doc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransferDocData" type="tns:ArrayOfTRANF_HD" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTRANF_HD">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TRANF_HD" nillable="true" type="tns:TRANF_HD" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TRANF_HD">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="branch_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="branch_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emp_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cby" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mby" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transport_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ITEM" type="tns:ArrayOfTRANF_ITEMS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTRANF_ITEMS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TRANF_ITEMS" nillable="true" type="tns:TRANF_ITEMS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TRANF_ITEMS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_item_no" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="matc_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="matgp_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mat_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mat_g_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mat_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_req_qty" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_actual_qty" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_memo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="item_code_01" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="item_code_02" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_ref_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_ref_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_traf_appcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_approve_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trani_close_date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cby" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mby" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Set_Transfer_DocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Set_Transfer_DocResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_Packing_Doc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PackingDocData" type="tns:ArrayOfTRANF_PACK" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTRANF_PACK">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TRANF_PACK" nillable="true" type="tns:TRANF_PACK" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TRANF_PACK">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_item_no" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_group" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranf_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="branch_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="branch_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_total" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="employee_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transport_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_vendor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_ks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transport_group" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_stamp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dropoint_code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranp_group" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Set_Packing_DocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Set_Packing_DocResult" type="tns:ReturnValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranchList" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductList" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDropPointListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDropPointList" />
+  </wsdl:message>
+  <wsdl:message name="GetDropPointListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDropPointListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderList" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResponseOrderListSoapIn">
+    <wsdl:part name="parameters" element="tns:ResponseOrderList" />
+  </wsdl:message>
+  <wsdl:message name="ResponseOrderListSoapOut">
+    <wsdl:part name="parameters" element="tns:ResponseOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Set_Transfer_DocSoapIn">
+    <wsdl:part name="parameters" element="tns:Set_Transfer_Doc" />
+  </wsdl:message>
+  <wsdl:message name="Set_Transfer_DocSoapOut">
+    <wsdl:part name="parameters" element="tns:Set_Transfer_DocResponse" />
+  </wsdl:message>
+  <wsdl:message name="Set_Packing_DocSoapIn">
+    <wsdl:part name="parameters" element="tns:Set_Packing_Doc" />
+  </wsdl:message>
+  <wsdl:message name="Set_Packing_DocSoapOut">
+    <wsdl:part name="parameters" element="tns:Set_Packing_DocResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OMSApiSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchList">
+      <wsdl:input message="tns:GetBranchListSoapIn" />
+      <wsdl:output message="tns:GetBranchListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <wsdl:input message="tns:GetProductListSoapIn" />
+      <wsdl:output message="tns:GetProductListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDropPointList">
+      <wsdl:input message="tns:GetDropPointListSoapIn" />
+      <wsdl:output message="tns:GetDropPointListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <wsdl:input message="tns:GetOrderListSoapIn" />
+      <wsdl:output message="tns:GetOrderListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResponseOrderList">
+      <wsdl:input message="tns:ResponseOrderListSoapIn" />
+      <wsdl:output message="tns:ResponseOrderListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_Transfer_Doc">
+      <wsdl:input message="tns:Set_Transfer_DocSoapIn" />
+      <wsdl:output message="tns:Set_Transfer_DocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_Packing_Doc">
+      <wsdl:input message="tns:Set_Packing_DocSoapIn" />
+      <wsdl:output message="tns:Set_Packing_DocSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OMSApiSoap" type="tns:OMSApiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchList">
+      <soap:operation soapAction="http://tempuri.org/GetBranchList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <soap:operation soapAction="http://tempuri.org/GetProductList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropPointList">
+      <soap:operation soapAction="http://tempuri.org/GetDropPointList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <soap:operation soapAction="http://tempuri.org/GetOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResponseOrderList">
+      <soap:operation soapAction="http://tempuri.org/ResponseOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_Transfer_Doc">
+      <soap:operation soapAction="http://tempuri.org/Set_Transfer_Doc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_Packing_Doc">
+      <soap:operation soapAction="http://tempuri.org/Set_Packing_Doc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OMSApiSoap12" type="tns:OMSApiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranchList">
+      <soap12:operation soapAction="http://tempuri.org/GetBranchList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <soap12:operation soapAction="http://tempuri.org/GetProductList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropPointList">
+      <soap12:operation soapAction="http://tempuri.org/GetDropPointList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResponseOrderList">
+      <soap12:operation soapAction="http://tempuri.org/ResponseOrderList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_Transfer_Doc">
+      <soap12:operation soapAction="http://tempuri.org/Set_Transfer_Doc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_Packing_Doc">
+      <soap12:operation soapAction="http://tempuri.org/Set_Packing_Doc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OMSApi">
+    <wsdl:port name="OMSApiSoap" binding="tns:OMSApiSoap">
+      <soap:address location="http://192.168.200.208:81/WMS-API/OMSApi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OMSApiSoap12" binding="tns:OMSApiSoap12">
+      <soap12:address location="http://192.168.200.208:81/WMS-API/OMSApi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

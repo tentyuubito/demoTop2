@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLocationBarcode" targetNamespace="http://tempuri.org/dsLocationBarcode.xsd" xmlns:mstns="http://tempuri.org/dsLocationBarcode.xsd" xmlns="http://tempuri.org/dsLocationBarcode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLocationBarcode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLocationBarcode" msprop:Generator_DataSetName="dsLocationBarcode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_LocationBar" msprop:Generator_UserTableName="VIEW_RPT_LocationBar" msprop:Generator_RowDeletedName="VIEW_RPT_LocationBarRowDeleted" msprop:Generator_TableClassName="VIEW_RPT_LocationBarDataTable" msprop:Generator_RowChangedName="VIEW_RPT_LocationBarRowChanged" msprop:Generator_RowClassName="VIEW_RPT_LocationBarRow" msprop:Generator_RowChangingName="VIEW_RPT_LocationBarRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_LocationBarRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_LocationBarRowChangeEventHandler" msprop:Generator_TablePropName="VIEW_RPT_LocationBar" msprop:Generator_TableVarName="tableVIEW_RPT_LocationBar" msprop:Generator_RowDeletingName="VIEW_RPT_LocationBarRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Location_Alias" msprop:Generator_UserColumnName="Location_Alias" msprop:Generator_ColumnPropNameInRow="Location_Alias" msprop:Generator_ColumnVarNameInTable="columnLocation_Alias" msprop:Generator_ColumnPropNameInTable="Location_AliasColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Location_Id" msprop:Generator_UserColumnName="Location_Id" msprop:Generator_ColumnPropNameInRow="Location_Id" msprop:Generator_ColumnVarNameInTable="columnLocation_Id" msprop:Generator_ColumnPropNameInTable="Location_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Warehouse_Id" msprop:Generator_UserColumnName="Warehouse_Id" msprop:Generator_ColumnPropNameInRow="Warehouse_Id" msprop:Generator_ColumnVarNameInTable="columnWarehouse_Id" msprop:Generator_ColumnPropNameInTable="Warehouse_IdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Add_Date" msprop:Generator_UserColumnName="Add_Date" msprop:Generator_ColumnPropNameInRow="Add_Date" msprop:Generator_ColumnVarNameInTable="columnAdd_Date" msprop:Generator_ColumnPropNameInTable="Add_DateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

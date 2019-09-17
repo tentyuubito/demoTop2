@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBarcodeBagMini" targetNamespace="http://tempuri.org/dsBarcodeBagMini.xsd" xmlns:mstns="http://tempuri.org/dsBarcodeBagMini.xsd" xmlns="http://tempuri.org/dsBarcodeBagMini.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBarcodeBagMini" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBarcodeBagMini" msprop:Generator_DataSetName="dsBarcodeBagMini">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Rpt_BarcodeBagMini" msprop:Generator_UserTableName="View_Rpt_BarcodeBagMini" msprop:Generator_RowDeletedName="View_Rpt_BarcodeBagMiniRowDeleted" msprop:Generator_RowChangedName="View_Rpt_BarcodeBagMiniRowChanged" msprop:Generator_RowClassName="View_Rpt_BarcodeBagMiniRow" msprop:Generator_RowChangingName="View_Rpt_BarcodeBagMiniRowChanging" msprop:Generator_RowEvArgName="View_Rpt_BarcodeBagMiniRowChangeEvent" msprop:Generator_RowEvHandlerName="View_Rpt_BarcodeBagMiniRowChangeEventHandler" msprop:Generator_TableClassName="View_Rpt_BarcodeBagMiniDataTable" msprop:Generator_TableVarName="tableView_Rpt_BarcodeBagMini" msprop:Generator_RowDeletingName="View_Rpt_BarcodeBagMiniRowDeleting" msprop:Generator_TablePropName="View_Rpt_BarcodeBagMini">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Route" msprop:Generator_UserColumnName="Route" msprop:Generator_ColumnVarNameInTable="columnRoute" msprop:Generator_ColumnPropNameInRow="Route" msprop:Generator_ColumnPropNameInTable="RouteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNo" msprop:Generator_UserColumnName="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UrgentLevel" msprop:Generator_UserColumnName="UrgentLevel" msprop:Generator_ColumnVarNameInTable="columnUrgentLevel" msprop:Generator_ColumnPropNameInRow="UrgentLevel" msprop:Generator_ColumnPropNameInTable="UrgentLevelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalQuantity" msprop:Generator_UserColumnName="TotalQuantity" msprop:Generator_ColumnVarNameInTable="columnTotalQuantity" msprop:Generator_ColumnPropNameInRow="TotalQuantity" msprop:Generator_ColumnPropNameInTable="TotalQuantityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode" msprop:Generator_UserColumnName="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Str1" msprop:Generator_UserColumnName="Str1" msprop:Generator_ColumnPropNameInRow="Str1" msprop:Generator_ColumnVarNameInTable="columnStr1" msprop:Generator_ColumnPropNameInTable="Str1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str2" msprop:Generator_UserColumnName="Str2" msprop:Generator_ColumnPropNameInRow="Str2" msprop:Generator_ColumnVarNameInTable="columnStr2" msprop:Generator_ColumnPropNameInTable="Str2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str3" msprop:Generator_UserColumnName="Str3" msprop:Generator_ColumnPropNameInRow="Str3" msprop:Generator_ColumnVarNameInTable="columnStr3" msprop:Generator_ColumnPropNameInTable="Str3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str4" msprop:Generator_UserColumnName="Str4" msprop:Generator_ColumnPropNameInRow="Str4" msprop:Generator_ColumnVarNameInTable="columnStr4" msprop:Generator_ColumnPropNameInTable="Str4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Str5" msprop:Generator_UserColumnName="Str5" msprop:Generator_ColumnPropNameInRow="Str5" msprop:Generator_ColumnVarNameInTable="columnStr5" msprop:Generator_ColumnPropNameInTable="Str5Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

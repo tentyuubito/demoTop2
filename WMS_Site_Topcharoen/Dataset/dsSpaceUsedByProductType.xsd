@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSpaceUsedByProductType" targetNamespace="http://tempuri.org/dsSpaceUsedByProductType.xsd" xmlns:mstns="http://tempuri.org/dsSpaceUsedByProductType.xsd" xmlns="http://tempuri.org/dsSpaceUsedByProductType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Master_INH_CleanConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Master_INH_CleanConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Master_INH_CleanConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Master_INH_CleanConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Master_INH_CleanConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Master_INH_CleanConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSpaceUsedByProductType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSpaceUsedByProductType" msprop:Generator_DataSetName="dsSpaceUsedByProductType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_SpaceUsedByProductType" msprop:Generator_UserTableName="VIEW_RPT_SpaceUsedByProductType" msprop:Generator_RowDeletedName="VIEW_RPT_SpaceUsedByProductTypeRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_SpaceUsedByProductTypeRowChanged" msprop:Generator_RowClassName="VIEW_RPT_SpaceUsedByProductTypeRow" msprop:Generator_RowChangingName="VIEW_RPT_SpaceUsedByProductTypeRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_SpaceUsedByProductTypeRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_SpaceUsedByProductTypeRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_SpaceUsedByProductTypeDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_SpaceUsedByProductType" msprop:Generator_RowDeletingName="VIEW_RPT_SpaceUsedByProductTypeRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_SpaceUsedByProductType">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductType_Index" msprop:Generator_UserColumnName="ProductType_Index" msprop:Generator_ColumnPropNameInRow="ProductType_Index" msprop:Generator_ColumnVarNameInTable="columnProductType_Index" msprop:Generator_ColumnPropNameInTable="ProductType_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductType_Des" msprop:Generator_UserColumnName="ProductType_Des" msprop:Generator_ColumnPropNameInRow="ProductType_Des" msprop:Generator_ColumnVarNameInTable="columnProductType_Des" msprop:Generator_ColumnPropNameInTable="ProductType_DesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Space_Count" msprop:Generator_UserColumnName="Space_Count" msprop:Generator_ColumnPropNameInRow="Space_Count" msprop:Generator_ColumnVarNameInTable="columnSpace_Count" msprop:Generator_ColumnPropNameInTable="Space_CountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Percent_Use_ProductType" msprop:Generator_UserColumnName="Percent_Use_ProductType" msprop:Generator_ColumnPropNameInRow="Percent_Use_ProductType" msprop:Generator_ColumnVarNameInTable="columnPercent_Use_ProductType" msprop:Generator_ColumnPropNameInTable="Percent_Use_ProductTypeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Percent_All_ProductType" msprop:Generator_UserColumnName="Percent_All_ProductType" msprop:Generator_ColumnPropNameInRow="Percent_All_ProductType" msprop:Generator_ColumnVarNameInTable="columnPercent_All_ProductType" msprop:Generator_ColumnPropNameInTable="Percent_All_ProductTypeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Percent_Graph" msprop:Generator_UserColumnName="Percent_Graph" msprop:Generator_ColumnVarNameInTable="columnPercent_Graph" msprop:Generator_ColumnPropNameInRow="Percent_Graph" msprop:Generator_ColumnPropNameInTable="Percent_GraphColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

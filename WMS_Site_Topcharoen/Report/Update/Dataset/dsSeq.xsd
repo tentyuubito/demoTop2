@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSeq" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSeq" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSeq" msprop:Generator_DataSetName="dsSeq">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Seq" msprop:Generator_UserTableName="View_Seq" msprop:Generator_RowDeletedName="View_SeqRowDeleted" msprop:Generator_TableClassName="View_SeqDataTable" msprop:Generator_RowChangedName="View_SeqRowChanged" msprop:Generator_RowClassName="View_SeqRow" msprop:Generator_RowChangingName="View_SeqRowChanging" msprop:Generator_RowEvArgName="View_SeqRowChangeEvent" msprop:Generator_RowEvHandlerName="View_SeqRowChangeEventHandler" msprop:Generator_TablePropName="View_Seq" msprop:Generator_TableVarName="tableView_Seq" msprop:Generator_RowDeletingName="View_SeqRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Seq" msprop:Generator_UserColumnName="Seq" msprop:Generator_ColumnPropNameInRow="Seq" msprop:Generator_ColumnVarNameInTable="columnSeq" msprop:Generator_ColumnPropNameInTable="SeqColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

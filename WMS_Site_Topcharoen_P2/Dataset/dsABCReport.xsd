@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsABCReport" targetNamespace="http://tempuri.org/dsABCReport.xsd" xmlns:mstns="http://tempuri.org/dsABCReport.xsd" xmlns="http://tempuri.org/dsABCReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="WMS_Site_PioneerHQ2_CusConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="WMS_Site_PioneerHQ2_CusConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WMS_Site_KingStella.MySettings.GlobalReference.Default.WMS_Site_PioneerHQ2_CusConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsABCReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsABCReport" msprop:Generator_DataSetName="dsABCReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW_RPT_ABC_Value" msprop:Generator_UserTableName="VIEW_RPT_ABC_Value" msprop:Generator_RowDeletedName="VIEW_RPT_ABC_ValueRowDeleted" msprop:Generator_RowChangedName="VIEW_RPT_ABC_ValueRowChanged" msprop:Generator_RowClassName="VIEW_RPT_ABC_ValueRow" msprop:Generator_RowChangingName="VIEW_RPT_ABC_ValueRowChanging" msprop:Generator_RowEvArgName="VIEW_RPT_ABC_ValueRowChangeEvent" msprop:Generator_RowEvHandlerName="VIEW_RPT_ABC_ValueRowChangeEventHandler" msprop:Generator_TableClassName="VIEW_RPT_ABC_ValueDataTable" msprop:Generator_TableVarName="tableVIEW_RPT_ABC_Value" msprop:Generator_RowDeletingName="VIEW_RPT_ABC_ValueRowDeleting" msprop:Generator_TablePropName="VIEW_RPT_ABC_Value">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sku_Index" msprop:Generator_UserColumnName="Sku_Index" msprop:Generator_ColumnPropNameInRow="Sku_Index" msprop:Generator_ColumnVarNameInTable="columnSku_Index" msprop:Generator_ColumnPropNameInTable="Sku_IndexColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sku_Id" msprop:Generator_UserColumnName="Sku_Id" msprop:Generator_ColumnPropNameInRow="Sku_Id" msprop:Generator_ColumnVarNameInTable="columnSku_Id" msprop:Generator_ColumnPropNameInTable="Sku_IdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seq" msprop:Generator_UserColumnName="Seq" msprop:Generator_ColumnPropNameInRow="Seq" msprop:Generator_ColumnVarNameInTable="columnSeq" msprop:Generator_ColumnPropNameInTable="SeqColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Sum_Qty" msprop:Generator_UserColumnName="Sum_Qty" msprop:Generator_ColumnPropNameInRow="Sum_Qty" msprop:Generator_ColumnVarNameInTable="columnSum_Qty" msprop:Generator_ColumnPropNameInTable="Sum_QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sum_Value0" msprop:Generator_UserColumnName="Sum_Value0" msprop:Generator_ColumnPropNameInRow="Sum_Value0" msprop:Generator_ColumnVarNameInTable="columnSum_Value0" msprop:Generator_ColumnPropNameInTable="Sum_Value0Column" type="xs:double" minOccurs="0" />
+              <xs:element name="Sum_Value1" msprop:Generator_UserColumnName="Sum_Value1" msprop:Generator_ColumnPropNameInRow="Sum_Value1" msprop:Generator_ColumnVarNameInTable="columnSum_Value1" msprop:Generator_ColumnPropNameInTable="Sum_Value1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="Sum_Value2" msprop:Generator_UserColumnName="Sum_Value2" msprop:Generator_ColumnPropNameInRow="Sum_Value2" msprop:Generator_ColumnVarNameInTable="columnSum_Value2" msprop:Generator_ColumnPropNameInTable="Sum_Value2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="Sum_Value3" msprop:Generator_UserColumnName="Sum_Value3" msprop:Generator_ColumnPropNameInRow="Sum_Value3" msprop:Generator_ColumnVarNameInTable="columnSum_Value3" msprop:Generator_ColumnPropNameInTable="Sum_Value3Column" type="xs:double" minOccurs="0" />
+              <xs:element name="SKU_Name_th" msprop:Generator_UserColumnName="SKU_Name_th" msprop:Generator_ColumnPropNameInRow="SKU_Name_th" msprop:Generator_ColumnVarNameInTable="columnSKU_Name_th" msprop:Generator_ColumnPropNameInTable="SKU_Name_thColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SKU_Name_en" msprop:Generator_UserColumnName="SKU_Name_en" msprop:Generator_ColumnPropNameInRow="SKU_Name_en" msprop:Generator_ColumnVarNameInTable="columnSKU_Name_en" msprop:Generator_ColumnPropNameInTable="SKU_Name_enColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aggr_Value" msprop:Generator_UserColumnName="Aggr_Value" msprop:Generator_ColumnPropNameInRow="Aggr_Value" msprop:Generator_ColumnVarNameInTable="columnAggr_Value" msprop:Generator_ColumnPropNameInTable="Aggr_ValueColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Aggr_Value_Percent" msprop:Generator_UserColumnName="Aggr_Value_Percent" msprop:Generator_ColumnPropNameInRow="Aggr_Value_Percent" msprop:Generator_ColumnVarNameInTable="columnAggr_Value_Percent" msprop:Generator_ColumnPropNameInTable="Aggr_Value_PercentColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CountSKU_Percent" msprop:Generator_UserColumnName="CountSKU_Percent" msprop:Generator_ColumnPropNameInRow="CountSKU_Percent" msprop:Generator_ColumnVarNameInTable="columnCountSKU_Percent" msprop:Generator_ColumnPropNameInTable="CountSKU_PercentColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Session_Id" msprop:Generator_UserColumnName="Session_Id" msprop:Generator_ColumnPropNameInRow="Session_Id" msprop:Generator_ColumnVarNameInTable="columnSession_Id" msprop:Generator_ColumnPropNameInTable="Session_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Index" msprop:Generator_UserColumnName="Customer_Index" msprop:Generator_ColumnPropNameInRow="Customer_Index" msprop:Generator_ColumnVarNameInTable="columnCustomer_Index" msprop:Generator_ColumnPropNameInTable="Customer_IndexColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Id" msprop:Generator_UserColumnName="Customer_Id" msprop:Generator_ColumnPropNameInRow="Customer_Id" msprop:Generator_ColumnVarNameInTable="columnCustomer_Id" msprop:Generator_ColumnPropNameInTable="Customer_IdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInTable="TitleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Name" msprop:Generator_UserColumnName="Customer_Name" msprop:Generator_ColumnPropNameInRow="Customer_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Name" msprop:Generator_ColumnPropNameInTable="Customer_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sum_aggr_value" msprop:Generator_UserColumnName="sum_aggr_value" msprop:Generator_ColumnVarNameInTable="columnsum_aggr_value" msprop:Generator_ColumnPropNameInRow="sum_aggr_value" msprop:Generator_ColumnPropNameInTable="sum_aggr_valueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sum_sum_qty" msprop:Generator_UserColumnName="sum_sum_qty" msprop:Generator_ColumnVarNameInTable="columnsum_sum_qty" msprop:Generator_ColumnPropNameInRow="sum_sum_qty" msprop:Generator_ColumnPropNameInTable="sum_sum_qtyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="count_sku" msprop:Generator_UserColumnName="count_sku" msprop:Generator_ColumnVarNameInTable="columncount_sku" msprop:Generator_ColumnPropNameInRow="count_sku" msprop:Generator_ColumnPropNameInTable="count_skuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Package_Sku" msprop:Generator_UserColumnName="Package_Sku" msprop:Generator_ColumnVarNameInTable="columnPackage_Sku" msprop:Generator_ColumnPropNameInRow="Package_Sku" msprop:Generator_ColumnPropNameInTable="Package_SkuColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VIEW_RPT_ABC_Value" />
+      <xs:field xpath="mstns:Sku_Index" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

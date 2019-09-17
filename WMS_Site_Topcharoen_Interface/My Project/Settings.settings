@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Preserve_RawData" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Import_RawData" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WMS_ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.200.214;Initial Catalog=WMS_Site_Topcharoen;User ID=sa;PWD=KCadmin01;Connect Timeout=600;Max Pool Size=100000;</Value>
+    </Setting>
+    <Setting Name="LOG_ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.200.214;Initial Catalog=WMS_Site_Topcharoen_InterfaceLog;User ID=sa;PWD=KCadmin01;Connect Timeout=600;Max Pool Size=100000;</Value>
+    </Setting>
+    <Setting Name="OMS_API" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.200.208:81/WMS-API/OMSApi.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

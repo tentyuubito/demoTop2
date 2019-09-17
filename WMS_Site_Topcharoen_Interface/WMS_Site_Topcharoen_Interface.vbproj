@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC030DBC-251B-4FED-AD40-1CB82EC83ABA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WMS_Site_Topcharoen_Interface.My.MyApplication</StartupObject>
+    <RootNamespace>WMS_Site_Topcharoen_Interface</RootNamespace>
+    <AssemblyName>WMS_Site_Topcharoen_Interface</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Resources\kascologo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WMS_Site_Topcharoen_Interface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WMS_Site_Topcharoen_Interface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>WMS_Site_Topcharoen_Interface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>WMS_Site_Topcharoen_Interface.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WMS_STD_Formula, Version=4.2.2016.302, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WMS_Site_KingStella\Assembly\WMS_STD_Formula.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS_STD_INB_PO_Datalayer, Version=4.2.2016.302, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="WMS_STD_Master, Version=4.2.2016.302, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WMS_Site_KingStella\Assembly\WMS_STD_Master.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS_STD_Master_Datalayer, Version=4.2.2016.302, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WMS_Site_KingStella\Assembly\WMS_STD_Master_Datalayer.dll</HintPath>
+    </Reference>
+    <Reference Include="WMS_STD_OUTB_SO_Datalayer, Version=4.2.2016.302, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsImport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsService.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cls_Export_Excel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataLayer\Sy_Running.vb" />
+    <Compile Include="DataLayer\WMS_Interface.vb" />
+    <Compile Include="DataLayer\OMS_Interface.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterface_log.Designer.vb">
+      <DependentUpon>frmInterface_log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterface_log.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInterface_Interval.Designer.vb">
+      <DependentUpon>frmInterface_Interval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInterface_Interval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\WMS_Function.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\OMS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterface_log.resx">
+      <DependentUpon>frmInterface_log.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInterface_Interval.resx">
+      <DependentUpon>frmInterface_Interval.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emptys.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แก้ไขรายการ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ค้นหา.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดึงข้อมูล.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แนะนำตำแหน่งจัดเก็บ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แนะนำตำแหน่งจัดเก็บ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แนะนำตำแหน่งจัดเก็บ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เพิ่มรายการ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ยกเลิกรายการ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ยืนยันรายการ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รายงาน_แสดงรายงาน.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลบรายการ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ล้างหน้าจอ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ล้างหน้าจอ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เลือกรายการ-_-เลือก.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ส่งข้อมูล.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แสดงรายการ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แสดงรายการ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\แสดงรายการ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ออกจากระบบ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ออกจากระบบ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ออกจากระบบ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\kascologo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assembly\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Assembly\Newtonsoft.Json.dll" />
+    <Content Include="Assembly\WMS_STD_Formula.dll" />
+    <Content Include="Assembly\WMS_STD_INB_PO_Datalayer.dll" />
+    <Content Include="Assembly\WMS_STD_Master.dll" />
+    <Content Include="Assembly\WMS_STD_Master_Datalayer.dll" />
+    <Content Include="Assembly\WMS_STD_OUTB_SO_Datalayer.dll" />
+    <None Include="Web References\OMS\OMSApi.disco" />
+    <None Include="Web References\OMS\OMSApi.wsdl" />
+    <None Include="Web References\OMS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\OMS\ReturnValue1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.200.208:81/WMS-API/OMSApi.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OMS\</RelPath>
+      <UpdateFromURL>http://192.168.200.208:81/WMS-API/OMSApi.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>OMS_API</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
