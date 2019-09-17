@@ -4435,33 +4435,33 @@ INTERFACE_OMS:
         End Try
     End Sub
 
-    Private Sub btnAddTransportChargePackSize_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddTransportChargePackSize.Click
-        Try
-            'If String.IsNullOrEmpty(Me.txtCarrier_ID.Tag) Then
-            '    W_MSG_Information("กรุณาระบุ " & Me.lblCarrier.Text)
-            '    Exit Sub
-            'End If
+    'Private Sub btnAddTransportChargePackSize_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddTransportChargePackSize.Click
+    '    Try
+    '        'If String.IsNullOrEmpty(Me.txtCarrier_ID.Tag) Then
+    '        '    W_MSG_Information("กรุณาระบุ " & Me.lblCarrier.Text)
+    '        '    Exit Sub
+    '        'End If
 
-            'Dim frm As New frmMainTransportManifestChargePackSize
-            'frm.Carrier_Index = Me.txtCarrier_ID.Tag
-            'frm.ShowDialog()
+    '        'Dim frm As New frmMainTransportManifestChargePackSize
+    '        'frm.Carrier_Index = Me.txtCarrier_ID.Tag
+    '        'frm.ShowDialog()
 
-            Dim Service As New tb_TransportManifest_Update
-            Dim Data As DataTable = Service.GetBarcodeB1(Me._TransportManifest_Index)
+    '        Dim Service As New tb_TransportManifest_Update
+    'Dim Data As DataTable = Service.GetBarcodeB1(Me._TransportManifest_Index)
 
-            Data.Columns.Remove("TransportManifest_Index")
-            If Data IsNot Nothing AndAlso Data.Rows.Count > 0 Then
-                Dim frmExport As New frmPopup_for_ExportExcel(Data)
-                frmExport.ShowDialog()
-            Else
-                Throw New Exception("ไม่พบข้อมูล Barcode B1")
-            End If
+    '        Data.Columns.Remove("TransportManifest_Index")
+    '        If Data IsNot Nothing AndAlso Data.Rows.Count > 0 Then
+    '            Dim frmExport As New frmPopup_for_ExportExcel(Data)
+    '            frmExport.ShowDialog()
+    '        Else
+    '            Throw New Exception("ไม่พบข้อมูล Barcode B1")
+    '        End If
 
 
-        Catch ex As Exception
-            W_MSG_Error(ex.Message.ToString)
-        End Try
-    End Sub
+    '    Catch ex As Exception
+    '        W_MSG_Error(ex.Message.ToString)
+    '    End Try
+    'End Sub
 
     Private Function Check_SaleOrders_Status()
         Try
@@ -4480,5 +4480,4 @@ INTERFACE_OMS:
             Throw ex
         End Try
     End Function
-
 End Class

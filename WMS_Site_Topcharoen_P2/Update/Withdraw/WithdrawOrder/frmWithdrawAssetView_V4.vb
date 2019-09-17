@@ -1645,4 +1645,32 @@ Public Class frmWithdrawAssetView_V4
             W_MSG_Error(ex.Message)
         End Try
     End Sub
+
+    Private Sub btnAddTransportChargePackSize_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddTransportChargePackSize.Click
+        Try
+            'If String.IsNullOrEmpty(Me.txtCarrier_ID.Tag) Then
+            '    W_MSG_Information("กรุณาระบุ " & Me.lblCarrier.Text)
+            '    Exit Sub
+            'End If
+
+            'Dim frm As New frmMainTransportManifestChargePackSize
+            'frm.Carrier_Index = Me.txtCarrier_ID.Tag
+            'frm.ShowDialog()
+
+            Dim Service As New tb_TransportManifest_Update
+            Dim Data As DataTable = Service.GetBarcodeB1(Me._withdraw_index)
+
+            Data.Columns.Remove("Withdraw_Index")
+            If Data IsNot Nothing AndAlso Data.Rows.Count > 0 Then
+                Dim frmExport As New frmPopup_for_ExportExcel(Data)
+                frmExport.ShowDialog()
+            Else
+                Throw New Exception("ไม่พบข้อมูล Barcode B1")
+            End If
+
+
+        Catch ex As Exception
+            W_MSG_Error(ex.Message.ToString)
+        End Try
+    End Sub
 End Class

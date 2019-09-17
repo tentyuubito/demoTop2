@@ -647,7 +647,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpJobDetailMain.Controls.Add(Me.lblRoute)
         Me.tbpJobDetailMain.Location = New System.Drawing.Point(4, 22)
         Me.tbpJobDetailMain.Name = "tbpJobDetailMain"
-        Me.tbpJobDetailMain.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpJobDetailMain.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpJobDetailMain.Size = New System.Drawing.Size(961, 211)
         Me.tbpJobDetailMain.TabIndex = 0
         Me.tbpJobDetailMain.Text = "รายละเอียดรถ/งาน"
@@ -1265,7 +1265,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpContainerDetail.Controls.Add(Me.cboContainer_Size1)
         Me.tbpContainerDetail.Location = New System.Drawing.Point(4, 22)
         Me.tbpContainerDetail.Name = "tbpContainerDetail"
-        Me.tbpContainerDetail.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpContainerDetail.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpContainerDetail.Size = New System.Drawing.Size(961, 211)
         Me.tbpContainerDetail.TabIndex = 1
         Me.tbpContainerDetail.Text = "รายละเอียดงานเพิ่มเติม"
@@ -1600,7 +1600,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpMileAndGas.Controls.Add(Me.gbTripMile)
         Me.tbpMileAndGas.Location = New System.Drawing.Point(4, 22)
         Me.tbpMileAndGas.Name = "tbpMileAndGas"
-        Me.tbpMileAndGas.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpMileAndGas.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpMileAndGas.Size = New System.Drawing.Size(961, 211)
         Me.tbpMileAndGas.TabIndex = 2
         Me.tbpMileAndGas.Text = "ข้อมูลระยะทาง/เชื้อเพลิง"
@@ -1930,6 +1930,7 @@ Partial Class frmTransportManifest_Update
         Me.btnAddTransportChargePackSize.Text = "ตั่งต่าคิดเงิน/" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "กล่อง"
         Me.btnAddTransportChargePackSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnAddTransportChargePackSize.UseVisualStyleBackColor = True
+        Me.btnAddTransportChargePackSize.Visible = False
         '
         'btnSave
         '
@@ -1993,7 +1994,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpSOList.Controls.Add(Me.grdTrasportManifestItem)
         Me.tbpSOList.Location = New System.Drawing.Point(4, 22)
         Me.tbpSOList.Name = "tbpSOList"
-        Me.tbpSOList.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpSOList.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpSOList.Size = New System.Drawing.Size(961, 354)
         Me.tbpSOList.TabIndex = 0
         Me.tbpSOList.Text = "รายการบิลที่จัดส่ง"
@@ -2495,7 +2496,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpTripTime.Controls.Add(Me.gbTimeAtSource)
         Me.tbpTripTime.Location = New System.Drawing.Point(4, 22)
         Me.tbpTripTime.Name = "tbpTripTime"
-        Me.tbpTripTime.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpTripTime.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpTripTime.Size = New System.Drawing.Size(961, 354)
         Me.tbpTripTime.TabIndex = 1
         Me.tbpTripTime.Text = "บันทึกเวลาการจัดส่ง(ศูนย์กระจาย)"
@@ -3048,7 +3049,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpTripTime2.Controls.Add(Me.gbTimeAtSource2)
         Me.tbpTripTime2.Location = New System.Drawing.Point(4, 22)
         Me.tbpTripTime2.Name = "tbpTripTime2"
-        Me.tbpTripTime2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpTripTime2.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpTripTime2.Size = New System.Drawing.Size(961, 354)
         Me.tbpTripTime2.TabIndex = 2
         Me.tbpTripTime2.Text = "บันทึกเวลาการจัดส่ง(ไปกลับ)"
@@ -3210,7 +3211,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpTripCharge.Controls.Add(Me.GroupBox2)
         Me.tbpTripCharge.Location = New System.Drawing.Point(4, 22)
         Me.tbpTripCharge.Name = "tbpTripCharge"
-        Me.tbpTripCharge.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpTripCharge.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpTripCharge.Size = New System.Drawing.Size(961, 354)
         Me.tbpTripCharge.TabIndex = 3
         Me.tbpTripCharge.Text = "ค่าบริการขนส่ง"
@@ -3620,7 +3621,7 @@ Partial Class frmTransportManifest_Update
         Me.tbpDropandRegion.Controls.Add(Me.GroupBox1)
         Me.tbpDropandRegion.Location = New System.Drawing.Point(4, 22)
         Me.tbpDropandRegion.Name = "tbpDropandRegion"
-        Me.tbpDropandRegion.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.tbpDropandRegion.Padding = New System.Windows.Forms.Padding(3)
         Me.tbpDropandRegion.Size = New System.Drawing.Size(961, 354)
         Me.tbpDropandRegion.TabIndex = 4
         Me.tbpDropandRegion.Text = "จำนวน Drop และเขตพื้นที่จัดส่ง"

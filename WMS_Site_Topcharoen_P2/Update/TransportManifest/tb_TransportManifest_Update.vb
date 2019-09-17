@@ -62,10 +62,10 @@ Public Class tb_TransportManifest_Update : Inherits WMS_STD_OUTB_Transport_Datal
         End Try
     End Sub
 
-    Public Function GetBarcodeB1(ByVal TransportManifestIndex As String) As DataTable
+    Public Function GetBarcodeB1(ByVal Withdraw_Index As String) As DataTable
         Try
-            If String.IsNullOrEmpty(TransportManifestIndex) Then
-                Throw New Exception("TransportManifestIndex not found")
+            If String.IsNullOrEmpty(Withdraw_Index) Then
+                Throw New Exception("Withdraw_Index not found")
             End If
 
             Dim SQL As New System.Text.StringBuilder
@@ -104,12 +104,12 @@ Public Class tb_TransportManifest_Update : Inherits WMS_STD_OUTB_Transport_Datal
 
             With SQL
                 .Append(" SELECT * FROM VIEW_RCP_EXPORT_MINIFEST_DTW ")
-                .Append(" WHERE TransportManifest_Index = @TransportManifest_Index ")
+                .Append(" WHERE Withdraw_Index = @Withdraw_Index ")
             End With
 
             With SQLServerCommand.Parameters
                 .Clear()
-                .Add("@TransportManifest_Index", SqlDbType.VarChar).Value = TransportManifestIndex
+                .Add("@Withdraw_Index", SqlDbType.VarChar).Value = Withdraw_Index
             End With
 
             Return DBExeQuery(SQL.ToString)
