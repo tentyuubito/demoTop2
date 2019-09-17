@@ -275,6 +275,13 @@ Public Class frmImport_PO_TCR
                         objtb_PurchaseOrderItem.Ratio = 1
                         objtb_PurchaseOrderItem.Remark = dtRowDetail(eColumnName.Remark_Item).ToString
                         objtb_PurchaseOrderItem.Str10 = dtRowDetail("Location").ToString
+                        objtb_PurchaseOrderItem.Str1 = Trim(dtRowDetail.Item("วันที่ผลิต").ToString)
+                        objtb_PurchaseOrderItem.Str2 = dtRowDetail("ItemCode").ToString
+                        objtb_PurchaseOrderItem.Str3 = dtRowDetail("ขนาดแว่น").ToString
+                        objtb_PurchaseOrderItem.Str4 = dtRowDetail("ประเทศที่ผลิต").ToString
+                        objtb_PurchaseOrderItem.Str5 = dtRowDetail("รุ่น").ToString
+                        objtb_PurchaseOrderItem.Str6 = dtRowDetail("สี").ToString
+                        objtb_PurchaseOrderItem.Str7 = dtRowDetail("บริษัท").ToString
 
                         objtb_PurchaseOrderItemCollection.Add(objtb_PurchaseOrderItem)
                     Next
